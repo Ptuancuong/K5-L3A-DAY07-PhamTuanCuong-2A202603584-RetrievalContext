@@ -1,0 +1,812 @@
+[
+  {
+    "query_id": "t01",
+    "split": "test",
+    "type": "paraphrase",
+    "question": "What piece of software takes a program written in a high-level language and turns it into assembly language?",
+    "filter": null,
+    "strategy": "dense[B]",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p210:c1",
+        "page": 210,
+        "rank": 1,
+        "score": 0.89061,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p206:c0",
+        "page": 206,
+        "rank": 2,
+        "score": 0.89016,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p211:c1",
+        "page": 211,
+        "rank": 3,
+        "score": 0.88645,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p205:c4",
+        "page": 205,
+        "rank": 4,
+        "score": 0.88629,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p210:c4",
+        "page": 210,
+        "rank": 5,
+        "score": 0.88018,
+        "hit": true
+      },
+      {
+        "id": "B:openstax-intro-cs:p211:c0",
+        "page": 211,
+        "rank": 6,
+        "score": 0.8779,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p210:c2",
+        "page": 210,
+        "rank": 7,
+        "score": 0.8722,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p221:c1",
+        "page": 221,
+        "rank": 8,
+        "score": 0.86644,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p221:c3",
+        "page": 221,
+        "rank": 9,
+        "score": 0.86262,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p225:c0",
+        "page": 225,
+        "rank": 10,
+        "score": 0.85806,
+        "hit": false
+      }
+    ],
+    "first_hit_rank": 5,
+    "hit1": false,
+    "hit3": false,
+    "context_ids": [
+      "B:openstax-intro-cs:p210:c1",
+      "B:openstax-intro-cs:p206:c0",
+      "B:openstax-intro-cs:p211:c1"
+    ],
+    "context_chars": 2382,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": false,
+    "elapsed_ms": 387.4,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 210,
+        "evidence": "A compiler is a piece of software that takes a program written in a given HLL and generates another program"
+      }
+    ]
+  },
+  {
+    "query_id": "t02",
+    "split": "test",
+    "type": "condition",
+    "question": "Between the CPU and memory, which bus is single directional and which is bidirectional, and why is the latter bidirectional?",
+    "filter": null,
+    "strategy": "dense[B]",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p223:c2",
+        "page": 223,
+        "rank": 1,
+        "score": 0.89319,
+        "hit": true
+      },
+      {
+        "id": "B:openstax-intro-cs:p223:c3",
+        "page": 223,
+        "rank": 2,
+        "score": 0.88063,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p229:c1",
+        "page": 229,
+        "rank": 3,
+        "score": 0.86511,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p261:c3",
+        "page": 261,
+        "rank": 4,
+        "score": 0.86394,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p206:c1",
+        "page": 206,
+        "rank": 5,
+        "score": 0.86226,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p273:c4",
+        "page": 273,
+        "rank": 6,
+        "score": 0.85774,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p207:c0",
+        "page": 207,
+        "rank": 7,
+        "score": 0.85701,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p234:c2",
+        "page": 234,
+        "rank": 8,
+        "score": 0.85673,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p222:c0",
+        "page": 222,
+        "rank": 9,
+        "score": 0.85611,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p269:c1",
+        "page": 269,
+        "rank": 10,
+        "score": 0.85577,
+        "hit": false
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p223:c2",
+      "B:openstax-intro-cs:p223:c3",
+      "B:openstax-intro-cs:p229:c1"
+    ],
+    "context_chars": 2812,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 79.8,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 223,
+        "evidence": "the address bus is single directional. But the data bus is bidirectional because you can send data to memory or get data from memory."
+      }
+    ]
+  },
+  {
+    "query_id": "t03",
+    "split": "test",
+    "type": "direct",
+    "question": "What five properties should an ideal memory system have?",
+    "filter": null,
+    "strategy": "dense[B]",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p229:c0",
+        "page": 229,
+        "rank": 1,
+        "score": 0.88518,
+        "hit": true
+      },
+      {
+        "id": "B:openstax-intro-cs:p259:c3",
+        "page": 259,
+        "rank": 2,
+        "score": 0.85089,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p228:c2",
+        "page": 228,
+        "rank": 3,
+        "score": 0.8492,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p281:c2",
+        "page": 281,
+        "rank": 4,
+        "score": 0.84396,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p229:c1",
+        "page": 229,
+        "rank": 5,
+        "score": 0.84025,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p277:c3",
+        "page": 277,
+        "rank": 6,
+        "score": 0.83921,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p233:c0",
+        "page": 233,
+        "rank": 7,
+        "score": 0.83857,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p228:c1",
+        "page": 228,
+        "rank": 8,
+        "score": 0.83846,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p225:c3",
+        "page": 225,
+        "rank": 9,
+        "score": 0.83839,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p223:c3",
+        "page": 223,
+        "rank": 10,
+        "score": 0.83302,
+        "hit": false
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p229:c0",
+      "B:openstax-intro-cs:p259:c3",
+      "B:openstax-intro-cs:p228:c2"
+    ],
+    "context_chars": 2586,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 67.4,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 229,
+        "evidence": "This ideal memory system must be fast, dense, persistent, large in capacity, and inexpensive."
+      }
+    ]
+  },
+  {
+    "query_id": "t04",
+    "split": "test",
+    "type": "paraphrase",
+    "question": "In UNIX, which two operations split process creation into two steps?",
+    "filter": null,
+    "strategy": "dense[B]",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p258:c2",
+        "page": 258,
+        "rank": 1,
+        "score": 0.88288,
+        "hit": true
+      },
+      {
+        "id": "B:openstax-intro-cs:p237:c1",
+        "page": 237,
+        "rank": 2,
+        "score": 0.84962,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p271:c1",
+        "page": 271,
+        "rank": 3,
+        "score": 0.84166,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p273:c1",
+        "page": 273,
+        "rank": 4,
+        "score": 0.83981,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p272:c3",
+        "page": 272,
+        "rank": 5,
+        "score": 0.83907,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p272:c2",
+        "page": 272,
+        "rank": 6,
+        "score": 0.8387,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p257:c3",
+        "page": 257,
+        "rank": 7,
+        "score": 0.83835,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p272:c1",
+        "page": 272,
+        "rank": 8,
+        "score": 0.83801,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p275:c2",
+        "page": 275,
+        "rank": 9,
+        "score": 0.83673,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p263:c3",
+        "page": 263,
+        "rank": 10,
+        "score": 0.83612,
+        "hit": false
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p258:c2",
+      "B:openstax-intro-cs:p237:c1",
+      "B:openstax-intro-cs:p271:c1"
+    ],
+    "context_chars": 2696,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 73.1,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 258,
+        "evidence": "splitting the process into two steps using fork and exec functionalities"
+      }
+    ]
+  },
+  {
+    "query_id": "t05",
+    "split": "test",
+    "type": "direct",
+    "question": "At a minimum, what does a process consist of?",
+    "filter": null,
+    "strategy": "dense[B]",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p267:c3",
+        "page": 267,
+        "rank": 1,
+        "score": 0.84377,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p273:c2",
+        "page": 273,
+        "rank": 2,
+        "score": 0.83297,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p257:c3",
+        "page": 257,
+        "rank": 3,
+        "score": 0.83287,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p268:c1",
+        "page": 268,
+        "rank": 4,
+        "score": 0.83241,
+        "hit": true
+      },
+      {
+        "id": "B:openstax-intro-cs:p258:c1",
+        "page": 258,
+        "rank": 5,
+        "score": 0.83156,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p279:c1",
+        "page": 279,
+        "rank": 6,
+        "score": 0.8282,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p275:c2",
+        "page": 275,
+        "rank": 7,
+        "score": 0.8257,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p273:c3",
+        "page": 273,
+        "rank": 8,
+        "score": 0.82495,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p273:c1",
+        "page": 273,
+        "rank": 9,
+        "score": 0.8228,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p268:c3",
+        "page": 268,
+        "rank": 10,
+        "score": 0.8221,
+        "hit": false
+      }
+    ],
+    "first_hit_rank": 4,
+    "hit1": false,
+    "hit3": false,
+    "context_ids": [
+      "B:openstax-intro-cs:p267:c3",
+      "B:openstax-intro-cs:p273:c2",
+      "B:openstax-intro-cs:p257:c3"
+    ],
+    "context_chars": 2422,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": false,
+    "elapsed_ms": 63.9,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 268,
+        "evidence": "A process consists of at least an address space, a CPU state, and a set of OS resources."
+      }
+    ]
+  },
+  {
+    "query_id": "t06",
+    "split": "test",
+    "type": "metadata_filter",
+    "question": "What hardware cache speeds up translating virtual addresses into physical addresses?",
+    "filter": {
+      "chapter": 6
+    },
+    "strategy": "dense[B]",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p281:c3",
+        "page": 281,
+        "rank": 1,
+        "score": 0.90918,
+        "hit": true
+      },
+      {
+        "id": "B:openstax-intro-cs:p281:c2",
+        "page": 281,
+        "rank": 2,
+        "score": 0.87163,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p282:c0",
+        "page": 282,
+        "rank": 3,
+        "score": 0.84658,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p258:c3",
+        "page": 258,
+        "rank": 4,
+        "score": 0.8275,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p293:c4",
+        "page": 293,
+        "rank": 5,
+        "score": 0.82653,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p259:c3",
+        "page": 259,
+        "rank": 6,
+        "score": 0.82611,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p293:c5",
+        "page": 293,
+        "rank": 7,
+        "score": 0.8252,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p266:c2",
+        "page": 266,
+        "rank": 8,
+        "score": 0.8199,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p281:c4",
+        "page": 281,
+        "rank": 9,
+        "score": 0.81984,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p278:c3",
+        "page": 278,
+        "rank": 10,
+        "score": 0.8175,
+        "hit": false
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p281:c3",
+      "B:openstax-intro-cs:p281:c2",
+      "B:openstax-intro-cs:p282:c0"
+    ],
+    "context_chars": 2065,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 64.6,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 281,
+        "evidence": "A TLB is a memory cache that stores the virtual memory recent transaction to physical memory"
+      }
+    ]
+  },
+  {
+    "query_id": "t07",
+    "split": "test",
+    "type": "condition",
+    "question": "After a website has set the two-factor authentication cookie, when is two-factor authentication required again?",
+    "filter": null,
+    "strategy": "dense[B]",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p290:c1",
+        "page": 290,
+        "rank": 1,
+        "score": 0.91116,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p290:c2",
+        "page": 290,
+        "rank": 2,
+        "score": 0.87912,
+        "hit": true
+      },
+      {
+        "id": "B:openstax-intro-cs:p290:c0",
+        "page": 290,
+        "rank": 3,
+        "score": 0.81883,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p237:c1",
+        "page": 237,
+        "rank": 4,
+        "score": 0.81448,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p281:c4",
+        "page": 281,
+        "rank": 5,
+        "score": 0.80065,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p289:c3",
+        "page": 289,
+        "rank": 6,
+        "score": 0.79999,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p273:c1",
+        "page": 273,
+        "rank": 7,
+        "score": 0.79752,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p252:c0",
+        "page": 252,
+        "rank": 8,
+        "score": 0.79665,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p251:c2",
+        "page": 251,
+        "rank": 9,
+        "score": 0.79463,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p259:c2",
+        "page": 259,
+        "rank": 10,
+        "score": 0.79282,
+        "hit": false
+      }
+    ],
+    "first_hit_rank": 2,
+    "hit1": false,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p290:c1",
+      "B:openstax-intro-cs:p290:c2",
+      "B:openstax-intro-cs:p290:c0"
+    ],
+    "context_chars": 2475,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 65.8,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 290,
+        "evidence": "Whenever a user needs to log in from a different browser or different machine, two-factor authentication is used again."
+      }
+    ]
+  },
+  {
+    "query_id": "t08",
+    "split": "test",
+    "type": "direct",
+    "question": "Which file system operation resets a file's length to zero and releases its allocated space?",
+    "filter": null,
+    "strategy": "dense[B]",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p286:c1",
+        "page": 286,
+        "rank": 1,
+        "score": 0.86249,
+        "hit": true
+      },
+      {
+        "id": "B:openstax-intro-cs:p259:c3",
+        "page": 259,
+        "rank": 2,
+        "score": 0.85799,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p285:c5",
+        "page": 285,
+        "rank": 3,
+        "score": 0.84349,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p279:c1",
+        "page": 279,
+        "rank": 4,
+        "score": 0.84153,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p277:c1",
+        "page": 277,
+        "rank": 5,
+        "score": 0.83817,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p282:c1",
+        "page": 282,
+        "rank": 6,
+        "score": 0.83691,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p286:c0",
+        "page": 286,
+        "rank": 7,
+        "score": 0.8346,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p292:c1",
+        "page": 292,
+        "rank": 8,
+        "score": 0.83432,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p284:c2",
+        "page": 284,
+        "rank": 9,
+        "score": 0.8331,
+        "hit": false
+      },
+      {
+        "id": "B:openstax-intro-cs:p286:c3",
+        "page": 286,
+        "rank": 10,
+        "score": 0.83254,
+        "hit": false
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p286:c1",
+      "B:openstax-intro-cs:p259:c3",
+      "B:openstax-intro-cs:p285:c5"
+    ],
+    "context_chars": 2828,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 65.4,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 286,
+        "evidence": "Truncate: Reset the file length to zero and release the allocated space for the file."
+      }
+    ]
+  }
+]

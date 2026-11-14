@@ -1,0 +1,1383 @@
+[
+  {
+    "query_id": "t01",
+    "split": "test",
+    "config": "dense",
+    "model": "anthropic/claude-haiku-5.5",
+    "question": "What piece of software takes a program written in a high-level language and turns it into assembly language?",
+    "filter": null,
+    "answerable": true,
+    "events": [
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "search_documents"
+        ],
+        "prompt_tokens": 1165,
+        "completion_tokens": 51,
+        "cost_usd": 0.000142,
+        "latency_ms": 1577.8,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "strategy": "dense[B]",
+        "forced": false,
+        "query": "software that translates high-level language program into assembly language",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "B:openstax-intro-cs:p206:c0",
+            "page": 206,
+            "rank": 1,
+            "score": 0.8927
+          },
+          {
+            "id": "B:openstax-intro-cs:p205:c4",
+            "page": 205,
+            "rank": 2,
+            "score": 0.87983
+          },
+          {
+            "id": "B:openstax-intro-cs:p211:c1",
+            "page": 211,
+            "rank": 3,
+            "score": 0.87784
+          }
+        ],
+        "added_ids": [
+          "B:openstax-intro-cs:p206:c0",
+          "B:openstax-intro-cs:p205:c4",
+          "B:openstax-intro-cs:p211:c1"
+        ],
+        "truncated_ids": [],
+        "not_included_ids": [],
+        "context_chars": 2502,
+        "elapsed_ms": 458.1
+      },
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "search_documents"
+        ],
+        "prompt_tokens": 2090,
+        "completion_tokens": 52,
+        "cost_usd": 0.000235,
+        "latency_ms": 1156.0,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "strategy": "dense[B]",
+        "forced": false,
+        "query": "compiler translates high-level language to assembly language program",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "B:openstax-intro-cs:p206:c0",
+            "page": 206,
+            "rank": 1,
+            "score": 0.90265
+          },
+          {
+            "id": "B:openstax-intro-cs:p210:c4",
+            "page": 210,
+            "rank": 2,
+            "score": 0.89653
+          },
+          {
+            "id": "B:openstax-intro-cs:p211:c1",
+            "page": 211,
+            "rank": 3,
+            "score": 0.89347
+          }
+        ],
+        "added_ids": [
+          "B:openstax-intro-cs:p210:c4"
+        ],
+        "truncated_ids": [],
+        "not_included_ids": [],
+        "context_chars": 2937,
+        "elapsed_ms": 66.3
+      },
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "submit_answer"
+        ],
+        "prompt_tokens": 2368,
+        "completion_tokens": 170,
+        "cost_usd": 0.0003218,
+        "latency_ms": 1471.9,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_searches": 2,
+    "context": "[B:openstax-intro-cs:p206:c0 | intro_cs.pdf | page 206 | section 5.1]\n(Figure 5.3). This special software that translates HLLs to executables includes tools called compilers, assemblers, and linkers. We will not discuss these tools here, (refer to 5.2 Computer Levels of Abstraction and 5.4 Machine-Level Program Representation), but we now know what they do. Here, we will look at how the hardware executes instructions.\n\nFigure 5.3 Programs developed in high-level languages (HLLs) such as C++, Java, or Python are then translated into executables that a computer can run.\n\nHardware Organization of Systems\n\n[B:openstax-intro-cs:p205:c4 | intro_cs.pdf | page 205 | section 5.1]\nThe programs we use in our computer systems, called applications, have been designed and written by software developers using computer languages, also called high-level languages (HLLs). HLLs have been designed to make the interaction between software developers and computers easier. However, computers do not understand HLLs. Computers understand only 1s and 0s. So, there is a set of programs designed to translate the programs written in an HLL into the 1s and 0s that computers can relate to. The programs written by software developers are translated into a set of instructions such as, “Add number 1 to number 2 and save the result as number 3.” These instructions are stored as a series of 1s and 0s. Each group of those 1s and 0s represents a single instruction. All the instructions, in their representation as 1s and 0s, are stored in a file called an executable file on the disk.\n\n[B:openstax-intro-cs:p211:c1 | intro_cs.pdf | page 211 | section 5.2]\n5.5, called an assembler (note that compilers may invoke assemblers directly). The assembler takes, as input, the assembly program generated by the compiler, and as output, a file that contains the equivalent of that assembly program in terms of 1s and 0s. This generated file is no longer in English, and you cannot open it with your favorite text editor. It is called a machine language file. This is the file that a computer understands. Figure 5.8 shows an example of a program written in an HLL (actually, a middle-level language, which is the C programming language), which is then translated to x86 assembly language and then to binary (refer to Chapter 4 Linguistic Realization of Algorithms: Low-Level Programming Languages).\n\nFigure 5.8 Programmers write in programs using HLLs but computers execute binary code, so we need to perform a translation.\n\n[B:openstax-intro-cs:p210:c4 | intro_cs.pdf | page 210 | section 5.2]\nA compiler is a piece of software that takes a program written in a given HLL and generates another program that does the same task as the initial program but is written in a language that is much friendlier to the computer called assembly language. Assembly language is then translated into machine language code so that the program can be executed (Figure 5.7).",
+    "context_ids": [
+      "B:openstax-intro-cs:p206:c0",
+      "B:openstax-intro-cs:p205:c4",
+      "B:openstax-intro-cs:p211:c1",
+      "B:openstax-intro-cs:p210:c4"
+    ],
+    "context_chars": 2937,
+    "prompt_tokens": 5623,
+    "completion_tokens": 273,
+    "cost_usd": 0.000699,
+    "llm_calls": 3,
+    "llm_ms": 4205.7,
+    "status": "answered",
+    "answer": "A compiler. It is a piece of software that takes a program written in a given high-level language and generates another program, written in assembly language, that does the same task [B:openstax-intro-cs:p210:c4].",
+    "citations": [
+      "B:openstax-intro-cs:p210:c4"
+    ],
+    "raw_answer": "A compiler. It is a piece of software that takes a program written in a given high-level language and generates another program, written in assembly language, that does the same task [B:openstax-intro-cs:p210:c4].",
+    "latency_ms": 4731.3,
+    "context_hit": true,
+    "first_search_hit_rank": null,
+    "cited_evidence": true,
+    "cited_blocks": {
+      "B:openstax-intro-cs:p210:c4": "[B:openstax-intro-cs:p210:c4 | intro_cs.pdf | page 210 | section 5.2]\nA compiler is a piece of software that takes a program written in a given HLL and generates another program that does the same task as the initial program but is written in a language that is much friendlier to the computer called assembly language. Assembly language is then translated into machine language code so that the program can be executed (Figure 5.7)."
+    }
+  },
+  {
+    "query_id": "t02",
+    "split": "test",
+    "config": "dense",
+    "model": "anthropic/claude-haiku-5.5",
+    "question": "Between the CPU and memory, which bus is single directional and which is bidirectional, and why is the latter bidirectional?",
+    "filter": null,
+    "answerable": true,
+    "events": [
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "search_documents"
+        ],
+        "prompt_tokens": 1177,
+        "completion_tokens": 62,
+        "cost_usd": 0.0001487,
+        "latency_ms": 1589.3,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "strategy": "dense[B]",
+        "forced": false,
+        "query": "bus between CPU and memory unidirectional bidirectional address bus data bus",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "B:openstax-intro-cs:p223:c2",
+            "page": 223,
+            "rank": 1,
+            "score": 0.89563
+          },
+          {
+            "id": "B:openstax-intro-cs:p207:c0",
+            "page": 207,
+            "rank": 2,
+            "score": 0.8766
+          },
+          {
+            "id": "B:openstax-intro-cs:p261:c3",
+            "page": 261,
+            "rank": 3,
+            "score": 0.86947
+          }
+        ],
+        "added_ids": [
+          "B:openstax-intro-cs:p223:c2",
+          "B:openstax-intro-cs:p207:c0",
+          "B:openstax-intro-cs:p261:c3"
+        ],
+        "truncated_ids": [],
+        "not_included_ids": [],
+        "context_chars": 2964,
+        "elapsed_ms": 411.1
+      },
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "submit_answer"
+        ],
+        "prompt_tokens": 2267,
+        "completion_tokens": 229,
+        "cost_usd": 0.0003412,
+        "latency_ms": 1650.2,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_searches": 1,
+    "context": "[B:openstax-intro-cs:p223:c2 | intro_cs.pdf | page 223 | section 5.4]\nFigure 5.17 The assembly programmer sees a simpler, but more realistic view of the machine than the HLL programmer.\n\nFigure 5.17 shows the following:\n\n• There is a processor (CPU) and memory.\n• The CPU and the memory are connected by a bus, which is a data pathway. When you access the memory, you may want to get data and must provide an address. Or you may want to write data to memory, so you must provide both the data and the address to which this data will be written. In both cases, the CPU must provide an address, therefore, the address bus is single directional. But the data bus is bidirectional because you can send data to memory or get data from memory.\n• Data is not the only thing you need to bring from the memory to the CPU. The main job of the CPU is to execute instructions on data.\n\n[B:openstax-intro-cs:p207:c0 | intro_cs.pdf | page 207 | section 5.1]\nFigure 5.4 Any computer system consists of several components that, together, help the computer do its job of executing programs.\n\nOne final piece of hardware inside the CPU is the I/O interface. The input/output (I/O) interface helps the CPU talk to the other I/O devices such as a keyboard or mouse. All the pieces—CPU, memory, graphics card—are connected via a collection of wires referred to as a bus. The purpose of a bus is to transfer data between the various pieces in the computer. Buses can differ in speed, which affects how fast the data are transferred. Figure 5.4 uses the generic word interconnect to designate buses. We can add more devices to the computer system such as a different display through expansion slots.\n\nLINK TO LEARNING\n\nRead this concise history of computers starting from the nineteenth century (https://openstax.org/r/ 76CompHistory19) to see how computers have changed and been developed over time.\n\nInput/Output Devices\n\n[B:openstax-intro-cs:p261:c3 | intro_cs.pdf | page 261 | section 6.2]\nThe behavior of device registers is different from that of ordinary memory locations. For example, the start operation bit may always read as 0, and the bits may change from one status to another (i.e., the operation complete bit may change without being written by the CPU).\n\nThe OS uses the device register to communicate with an I/O device as follows:\n\n1. The CPU writes device registers to start the operation. 2. The CPU polls the ready bit in the device register. 3. The device sets the ready bit when the operation is finished. 4. The CPU loads the buffer address into a device register before starting the operation to define where to copy data read from disk. 5. Fast storage media devices move data directly to/from physical memory via direct memory access (DMA); other devices require the intervention of the CPU via programmed I/O or interrupt initiated I/O. 6. Interrupts allow the CPU to do other work while devices are operating, and the OS figures out which device interrupted.",
+    "context_ids": [
+      "B:openstax-intro-cs:p223:c2",
+      "B:openstax-intro-cs:p207:c0",
+      "B:openstax-intro-cs:p261:c3"
+    ],
+    "context_chars": 2964,
+    "prompt_tokens": 3444,
+    "completion_tokens": 291,
+    "cost_usd": 0.00049,
+    "llm_calls": 2,
+    "llm_ms": 3239.5,
+    "status": "answered",
+    "answer": "The address bus is single directional, and the data bus is bidirectional. The CPU must always provide an address to memory, so the address bus runs only one way [B:openstax-intro-cs:p223:c2]. The data bus is bidirectional because data can be sent to memory (when writing) or retrieved from memory (when reading) [B:openstax-intro-cs:p223:c2].",
+    "citations": [
+      "B:openstax-intro-cs:p223:c2"
+    ],
+    "raw_answer": "The address bus is single directional, and the data bus is bidirectional. The CPU must always provide an address to memory, so the address bus runs only one way [B:openstax-intro-cs:p223:c2]. The data bus is bidirectional because data can be sent to memory (when writing) or retrieved from memory (when reading) [B:openstax-intro-cs:p223:c2].",
+    "latency_ms": 3651.1,
+    "context_hit": true,
+    "first_search_hit_rank": 1,
+    "cited_evidence": true,
+    "cited_blocks": {
+      "B:openstax-intro-cs:p223:c2": "[B:openstax-intro-cs:p223:c2 | intro_cs.pdf | page 223 | section 5.4]\nFigure 5.17 The assembly programmer sees a simpler, but more realistic view of the machine than the HLL programmer.\n\nFigure 5.17 shows the following:\n\n• There is a processor (CPU) and memory.\n• The CPU and the memory are connected by a bus, which is a data pathway. When you access the memory, you may want to get data and must provide an address. Or you may want to write data to memory, so you must provide both the data and the address to which this data will be written. In both cases, the CPU must provide an address, therefore, the address bus is single directional. But the data bus is bidirectional because you can send data to memory or get data from memory.\n• Data is not the only thing you need to bring from the memory to the CPU. The main job of the CPU is to execute instructions on data."
+    }
+  },
+  {
+    "query_id": "t03",
+    "split": "test",
+    "config": "dense",
+    "model": "anthropic/claude-haiku-5.5",
+    "question": "What five properties should an ideal memory system have?",
+    "filter": null,
+    "answerable": true,
+    "events": [
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "search_documents"
+        ],
+        "prompt_tokens": 1153,
+        "completion_tokens": 45,
+        "cost_usd": 0.0001378,
+        "latency_ms": 1554.8,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "strategy": "dense[B]",
+        "forced": false,
+        "query": "ideal memory system properties",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "B:openstax-intro-cs:p229:c0",
+            "page": 229,
+            "rank": 1,
+            "score": 0.8882
+          },
+          {
+            "id": "B:openstax-intro-cs:p228:c2",
+            "page": 228,
+            "rank": 2,
+            "score": 0.87292
+          },
+          {
+            "id": "B:openstax-intro-cs:p259:c3",
+            "page": 259,
+            "rank": 3,
+            "score": 0.85539
+          }
+        ],
+        "added_ids": [
+          "B:openstax-intro-cs:p229:c0",
+          "B:openstax-intro-cs:p228:c2",
+          "B:openstax-intro-cs:p259:c3"
+        ],
+        "truncated_ids": [],
+        "not_included_ids": [],
+        "context_chars": 2586,
+        "elapsed_ms": 444.9
+      },
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "submit_answer"
+        ],
+        "prompt_tokens": 2083,
+        "completion_tokens": 225,
+        "cost_usd": 0.0003208,
+        "latency_ms": 1670.0,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_searches": 1,
+    "context": "[B:openstax-intro-cs:p229:c0 | intro_cs.pdf | page 229 | section 5.5]\nThe Memory Hierarchy\n\nWe have five items on our wish list for an ideal memory and, since there is no single technology that excels in all five, we must combine several technologies to come close to the ideal memory system. This ideal memory system must be fast, dense, persistent, large in capacity, and inexpensive. The technologies that we currently use have the following characteristics:\n\n• Technology 1: very fast but expensive, less dense, and volatile\n• Technology 2: faster and denser, but volatile and moderately expensive\n• Technology 3: persistent and inexpensive but slow\n• Technology 4: persistent and very inexpensive but very slow\n\n[B:openstax-intro-cs:p228:c2 | intro_cs.pdf | page 228 | section 5.5]\nThe reality is much less ideal. There is no single technology that excels in all these aspects. Some technologies are fast but more expensive, volatile, and less dense, while others are cheap and persistent but are relatively slower than other technologies. If we pick only one technology, we end up with a non-functional system. For example, if we pick the fast and volatile but expensive technology, the resulting computing system, which is probably very expensive, needs to be powered on indefinitely in order to retain the data. If we pick the\n\npersistent and cheap but slow technology, the system may be unusable due to its slow speed.\n\nThe word storage is usually used with persistence (long-term storage) while the word memory is used for volatility (short-term storage) even though this distinction may be blurred in future technologies. How can we get the best of both worlds?\n\nCONCEPTS IN PRACTICE\n\nThe More You Know\n\n[B:openstax-intro-cs:p259:c3 | intro_cs.pdf | page 259 | section 6.2]\nAn OS must satisfy the policies of how much physical memory to allocate to each process and when to remove a process from memory. It must implement these policies using the following mechanisms: memory allocation and memory deallocation. Memory allocation is the process of setting aside sections of memory in a program to be used to store variables and instances of structures and classes. The memory allocation can be static memory allocation or dynamic memory allocation. Memory deallocation is the process of freeing the space corresponding to finished processes when that space is needed by the rest of the system. In addition, the OS must maintain mappings from virtual addresses to physical (i.e., page tables) and switch CPU context among address spaces.\n\nINDUSTRY SPOTLIGHT\n\nWindowing Systems",
+    "context_ids": [
+      "B:openstax-intro-cs:p229:c0",
+      "B:openstax-intro-cs:p228:c2",
+      "B:openstax-intro-cs:p259:c3"
+    ],
+    "context_chars": 2586,
+    "prompt_tokens": 3236,
+    "completion_tokens": 270,
+    "cost_usd": 0.000459,
+    "llm_calls": 2,
+    "llm_ms": 3224.8,
+    "status": "answered",
+    "answer": "An ideal memory system must be fast, dense, persistent, large in capacity, and inexpensive [B:openstax-intro-cs:p229:c0]. No single current technology excels at all five, so several technologies are combined in a memory hierarchy [B:openstax-intro-cs:p228:c2].",
+    "citations": [
+      "B:openstax-intro-cs:p229:c0",
+      "B:openstax-intro-cs:p228:c2"
+    ],
+    "raw_answer": "An ideal memory system must be fast, dense, persistent, large in capacity, and inexpensive [B:openstax-intro-cs:p229:c0]. No single current technology excels at all five, so several technologies are combined in a memory hierarchy [B:openstax-intro-cs:p228:c2].",
+    "latency_ms": 3670.4,
+    "context_hit": true,
+    "first_search_hit_rank": 1,
+    "cited_evidence": true,
+    "cited_blocks": {
+      "B:openstax-intro-cs:p229:c0": "[B:openstax-intro-cs:p229:c0 | intro_cs.pdf | page 229 | section 5.5]\nThe Memory Hierarchy\n\nWe have five items on our wish list for an ideal memory and, since there is no single technology that excels in all five, we must combine several technologies to come close to the ideal memory system. This ideal memory system must be fast, dense, persistent, large in capacity, and inexpensive. The technologies that we currently use have the following characteristics:\n\n• Technology 1: very fast but expensive, less dense, and volatile\n• Technology 2: faster and denser, but volatile and moderately expensive\n• Technology 3: persistent and inexpensive but slow\n• Technology 4: persistent and very inexpensive but very slow",
+      "B:openstax-intro-cs:p228:c2": "[B:openstax-intro-cs:p228:c2 | intro_cs.pdf | page 228 | section 5.5]\nThe reality is much less ideal. There is no single technology that excels in all these aspects. Some technologies are fast but more expensive, volatile, and less dense, while others are cheap and persistent but are relatively slower than other technologies. If we pick only one technology, we end up with a non-functional system. For example, if we pick the fast and volatile but expensive technology, the resulting computing system, which is probably very expensive, needs to be powered on indefinitely in order to retain the data. If we pick the\n\npersistent and cheap but slow technology, the system may be unusable due to its slow speed.\n\nThe word storage is usually used with persistence (long-term storage) while the word memory is used for volatility (short-term storage) even though this distinction may be blurred in future technologies. How can we get the best of both worlds?\n\nCONCEPTS IN PRACTICE\n\nThe More You Know"
+    }
+  },
+  {
+    "query_id": "t04",
+    "split": "test",
+    "config": "dense",
+    "model": "anthropic/claude-haiku-5.5",
+    "question": "In UNIX, which two operations split process creation into two steps?",
+    "filter": null,
+    "answerable": true,
+    "events": [
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "search_documents"
+        ],
+        "prompt_tokens": 1158,
+        "completion_tokens": 51,
+        "cost_usd": 0.0001413,
+        "latency_ms": 1577.7,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "strategy": "dense[B]",
+        "forced": false,
+        "query": "UNIX process creation fork exec two steps",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "B:openstax-intro-cs:p258:c2",
+            "page": 258,
+            "rank": 1,
+            "score": 0.8811
+          },
+          {
+            "id": "B:openstax-intro-cs:p269:c2",
+            "page": 269,
+            "rank": 2,
+            "score": 0.88041
+          },
+          {
+            "id": "B:openstax-intro-cs:p269:c1",
+            "page": 269,
+            "rank": 3,
+            "score": 0.85787
+          }
+        ],
+        "added_ids": [
+          "B:openstax-intro-cs:p258:c2",
+          "B:openstax-intro-cs:p269:c2",
+          "B:openstax-intro-cs:p269:c1"
+        ],
+        "truncated_ids": [],
+        "not_included_ids": [],
+        "context_chars": 1907,
+        "elapsed_ms": 411.4
+      },
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "submit_answer"
+        ],
+        "prompt_tokens": 1904,
+        "completion_tokens": 190,
+        "cost_usd": 0.0002854,
+        "latency_ms": 1528.0,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_searches": 1,
+    "context": "[B:openstax-intro-cs:p258:c2 | intro_cs.pdf | page 258 | section 6.2]\nDifferent OSs approach process management in different ways. For example, the Windows operating system’s approach consists of adding an operating system call to create a process and other system calls for process operation. The approach used in the UNIX OS is different from this as it consists of splitting the process into two steps using fork and exec functionalities. The fork functionality is used to set up privileges by creating a complete copy of the process, and the exec functionality brings the executable file into memory to start the execution.\n\nAddress Space and Memory Space Management\n\n[B:openstax-intro-cs:p269:c2 | intro_cs.pdf | page 269 | section 6.3]\nint main() { // Forking to create a new process pid_t pid = fork(); if (pid == 0) { // Child process printf(\"This is the child process with PID %d\\n\", getpid()); } else if (pid > 0) { // Parent process printf(\"This is the parent process with PID %d\\n\", getpid()); } else { // Fork failed printf(\"Fork failed!\\n\"); return 1; } return 0; }\n\n[B:openstax-intro-cs:p269:c1 | intro_cs.pdf | page 269 | section 6.3]\nSuppose that there’s a process that needs input from a user. Because the OS does not use any CPU while waiting for this input, it marks the process in the PCB as suspended. When the user enters the input, the process’s status in the PCB changes. The OS keeps the details relating to all of a process’s execution state in the PCB when the process is not running. The CPU state (e.g., PC, SP, GPRs) is transferred out of the hardware registers into the PCB when execution is suspended. When a process is running, its state is spread between the PCB and the CPU.\n\nHere is an example in Linux that illustrates how to use the PID when creating a child process from a parent main process, which uses the fork command in C:\n\n#include \"unistd.h\" #include <stdio.h>",
+    "context_ids": [
+      "B:openstax-intro-cs:p258:c2",
+      "B:openstax-intro-cs:p269:c2",
+      "B:openstax-intro-cs:p269:c1"
+    ],
+    "context_chars": 1907,
+    "prompt_tokens": 3062,
+    "completion_tokens": 241,
+    "cost_usd": 0.000427,
+    "llm_calls": 2,
+    "llm_ms": 3105.7,
+    "status": "answered",
+    "answer": "In UNIX, process creation is split into two steps using the fork and exec functionalities. Fork creates a complete copy of the process to set up privileges, and exec brings the executable file into memory to start execution [B:openstax-intro-cs:p258:c2].",
+    "citations": [
+      "B:openstax-intro-cs:p258:c2"
+    ],
+    "raw_answer": "In UNIX, process creation is split into two steps using the fork and exec functionalities. Fork creates a complete copy of the process to set up privileges, and exec brings the executable file into memory to start execution [B:openstax-intro-cs:p258:c2].",
+    "latency_ms": 3517.6,
+    "context_hit": true,
+    "first_search_hit_rank": 1,
+    "cited_evidence": true,
+    "cited_blocks": {
+      "B:openstax-intro-cs:p258:c2": "[B:openstax-intro-cs:p258:c2 | intro_cs.pdf | page 258 | section 6.2]\nDifferent OSs approach process management in different ways. For example, the Windows operating system’s approach consists of adding an operating system call to create a process and other system calls for process operation. The approach used in the UNIX OS is different from this as it consists of splitting the process into two steps using fork and exec functionalities. The fork functionality is used to set up privileges by creating a complete copy of the process, and the exec functionality brings the executable file into memory to start the execution.\n\nAddress Space and Memory Space Management"
+    }
+  },
+  {
+    "query_id": "t05",
+    "split": "test",
+    "config": "dense",
+    "model": "anthropic/claude-haiku-5.5",
+    "question": "At a minimum, what does a process consist of?",
+    "filter": null,
+    "answerable": true,
+    "events": [
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "search_documents"
+        ],
+        "prompt_tokens": 1153,
+        "completion_tokens": 44,
+        "cost_usd": 0.0001373,
+        "latency_ms": 1201.7,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "strategy": "dense[B]",
+        "forced": false,
+        "query": "what does a process consist of",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "B:openstax-intro-cs:p258:c1",
+            "page": 258,
+            "rank": 1,
+            "score": 0.88238
+          },
+          {
+            "id": "B:openstax-intro-cs:p268:c1",
+            "page": 268,
+            "rank": 2,
+            "score": 0.88109
+          },
+          {
+            "id": "B:openstax-intro-cs:p257:c3",
+            "page": 257,
+            "rank": 3,
+            "score": 0.87454
+          }
+        ],
+        "added_ids": [
+          "B:openstax-intro-cs:p258:c1",
+          "B:openstax-intro-cs:p268:c1",
+          "B:openstax-intro-cs:p257:c3"
+        ],
+        "truncated_ids": [],
+        "not_included_ids": [],
+        "context_chars": 2518,
+        "elapsed_ms": 80.6
+      },
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "submit_answer"
+        ],
+        "prompt_tokens": 2021,
+        "completion_tokens": 207,
+        "cost_usd": 0.0003056,
+        "latency_ms": 1579.0,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_searches": 1,
+    "context": "[B:openstax-intro-cs:p258:c1 | intro_cs.pdf | page 258 | section 6.2]\nSharing Mostly isolated Shares memory and data\n\nTable 6.2 Process vs Thread\n\nProcessing\n\nA program is passive; it is just bytes on a disk that encode instructions to be run. A process is an instance of a program being executed—or processed—by a processor. Thus, processing involves a program, a process, and\n\na processor. The processor can be a real processor or a virtual processor (i.e., CPU core assigned to a virtual machine). At any time, there may be many processes running copies of the same program (e.g., an editor); each process is separate and usually independent. An OS is responsible for managing these processes.\n\n[B:openstax-intro-cs:p268:c1 | intro_cs.pdf | page 268 | section 6.3]\nA process consists of at least an address space, a CPU state, and a set of OS resources. A process’s address space is illustrated in Figure 6.15. As you learned earlier in this chapter, the address space contains the instruction code for the corresponding running program and the data needed by the running program. The data can be static data, which does not change within the program, or heap data, which serves a collection of elements and uses a tree or stack data structure. A CPU state consists of the program counter, the stack pointer (SP), and general-purpose registers. The PC is a CPU register located in the processor that has the next instruction address. The stack pointer (SP) is a register that indicates the location of the last item that was added to the stack.\n\n[B:openstax-intro-cs:p257:c3 | intro_cs.pdf | page 257 | section 6.2]\nWith a single click, end users seamlessly launch applications, enjoying the simplicity of the process. Have you ever wondered what manages the application once it is launched? The direct answer is the OS. An OS executes many kinds of activities starting from users’ programs, background jobs or scripts, to system programs. There are many system programs such as print managers, name servers, and file servers. Each one of these programs or activities is encapsulated within a process. As you learned in the preceding section, a process is a running program that has an execution context plus the runtime instance of the program itself. Examples of an execution context are program counters (PCs), registers, VM maps, OS resources, and examples of runtime instance are code and data.\n\nHere are some other process-related concepts that will be introduced here and developed as the chapter progresses:",
+    "context_ids": [
+      "B:openstax-intro-cs:p258:c1",
+      "B:openstax-intro-cs:p268:c1",
+      "B:openstax-intro-cs:p257:c3"
+    ],
+    "context_chars": 2518,
+    "prompt_tokens": 3174,
+    "completion_tokens": 251,
+    "cost_usd": 0.000443,
+    "llm_calls": 2,
+    "llm_ms": 2780.7,
+    "status": "answered",
+    "answer": "At a minimum, a process consists of an address space, a CPU state, and a set of OS resources [B:openstax-intro-cs:p268:c1]. The CPU state in turn consists of the program counter, the stack pointer, and general-purpose registers [B:openstax-intro-cs:p268:c1].",
+    "citations": [
+      "B:openstax-intro-cs:p268:c1"
+    ],
+    "raw_answer": "At a minimum, a process consists of an address space, a CPU state, and a set of OS resources [B:openstax-intro-cs:p268:c1]. The CPU state in turn consists of the program counter, the stack pointer, and general-purpose registers [B:openstax-intro-cs:p268:c1].",
+    "latency_ms": 2861.8,
+    "context_hit": true,
+    "first_search_hit_rank": 2,
+    "cited_evidence": true,
+    "cited_blocks": {
+      "B:openstax-intro-cs:p268:c1": "[B:openstax-intro-cs:p268:c1 | intro_cs.pdf | page 268 | section 6.3]\nA process consists of at least an address space, a CPU state, and a set of OS resources. A process’s address space is illustrated in Figure 6.15. As you learned earlier in this chapter, the address space contains the instruction code for the corresponding running program and the data needed by the running program. The data can be static data, which does not change within the program, or heap data, which serves a collection of elements and uses a tree or stack data structure. A CPU state consists of the program counter, the stack pointer (SP), and general-purpose registers. The PC is a CPU register located in the processor that has the next instruction address. The stack pointer (SP) is a register that indicates the location of the last item that was added to the stack."
+    }
+  },
+  {
+    "query_id": "t06",
+    "split": "test",
+    "config": "dense",
+    "model": "anthropic/claude-haiku-5.5",
+    "question": "What hardware cache speeds up translating virtual addresses into physical addresses?",
+    "filter": {
+      "chapter": 6
+    },
+    "answerable": true,
+    "events": [
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "search_documents"
+        ],
+        "prompt_tokens": 1206,
+        "completion_tokens": 60,
+        "cost_usd": 0.0001506,
+        "latency_ms": 1301.7,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "strategy": "dense[B]",
+        "forced": false,
+        "query": "hardware cache speeds up translating virtual addresses into physical addresses",
+        "filter": {
+          "chapter": 6
+        },
+        "top_k": 3,
+        "results": [
+          {
+            "id": "B:openstax-intro-cs:p281:c3",
+            "page": 281,
+            "rank": 1,
+            "score": 0.91826
+          },
+          {
+            "id": "B:openstax-intro-cs:p281:c2",
+            "page": 281,
+            "rank": 2,
+            "score": 0.87836
+          },
+          {
+            "id": "B:openstax-intro-cs:p282:c0",
+            "page": 282,
+            "rank": 3,
+            "score": 0.86553
+          }
+        ],
+        "added_ids": [
+          "B:openstax-intro-cs:p281:c3",
+          "B:openstax-intro-cs:p281:c2",
+          "B:openstax-intro-cs:p282:c0"
+        ],
+        "truncated_ids": [],
+        "not_included_ids": [],
+        "context_chars": 2065,
+        "elapsed_ms": 115.9
+      },
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "submit_answer"
+        ],
+        "prompt_tokens": 1990,
+        "completion_tokens": 192,
+        "cost_usd": 0.000295,
+        "latency_ms": 1519.2,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_searches": 1,
+    "context": "[B:openstax-intro-cs:p281:c3 | intro_cs.pdf | page 281 | section 6.4]\nThere is a time cost associated with performing virtual-to-physical memory address translation, however, and this can add up given that most programs need access to the memory to store data. To speed up address translation, the CPU has dedicated hardware for caching (storing) recent address translations called a\n\ntranslation lookaside buffer (TLB). A TLB is a memory cache that stores the virtual memory recent transaction to physical memory. TLBs help the CPU avoid making multiple round trips to main memory just to resolve a single virtual memory access by only requiring one round trip (Figure 6.31).\n\n[B:openstax-intro-cs:p281:c2 | intro_cs.pdf | page 281 | section 6.4]\nThe key component of the operating system that ensures process isolation by guaranteeing that each process gets its own view of the memory is virtual memory. A running program (process) has a seemingly infinite view of memory and can access any region without worrying about other programs that might also be running on the computer. The OS seamlessly translates each process memory request into a separate region of the physical hardware memory through address translation. When the system needs to find a physical address in the memory that matches the virtual address, address translation occurs. The running process only deals with virtual addresses and never sees the physical address. Virtual memory is mapped to physical memory in units called “pages.”\n\n[B:openstax-intro-cs:p282:c0 | intro_cs.pdf | page 282 | section 6.4]\nFigure 6.31 Translation lookaside buffers (TLBs) speed up address translation by using an approach that involves detecting “hits” (which means a page table entry is present in the TLB) and “misses” (a page table entry is not found in the TLB).\n\nLINK TO LEARNING\n\nWhat is the fundamental concept that makes it possible to implement virtual memory? Check out an explanation of how to implement virtual memory (https://openstax.org/r/76virtmem) to investigate this question.\n\nDemand Paging",
+    "context_ids": [
+      "B:openstax-intro-cs:p281:c3",
+      "B:openstax-intro-cs:p281:c2",
+      "B:openstax-intro-cs:p282:c0"
+    ],
+    "context_chars": 2065,
+    "prompt_tokens": 3196,
+    "completion_tokens": 252,
+    "cost_usd": 0.000446,
+    "llm_calls": 2,
+    "llm_ms": 2820.9,
+    "status": "answered",
+    "answer": "The translation lookaside buffer (TLB) is the dedicated hardware cache that stores recent virtual-to-physical address translations, speeding up address translation by avoiding multiple round trips to main memory [B:openstax-intro-cs:p281:c3].",
+    "citations": [
+      "B:openstax-intro-cs:p281:c3"
+    ],
+    "raw_answer": "The translation lookaside buffer (TLB) is the dedicated hardware cache that stores recent virtual-to-physical address translations, speeding up address translation by avoiding multiple round trips to main memory [B:openstax-intro-cs:p281:c3].",
+    "latency_ms": 2937.3,
+    "context_hit": true,
+    "first_search_hit_rank": 1,
+    "cited_evidence": true,
+    "cited_blocks": {
+      "B:openstax-intro-cs:p281:c3": "[B:openstax-intro-cs:p281:c3 | intro_cs.pdf | page 281 | section 6.4]\nThere is a time cost associated with performing virtual-to-physical memory address translation, however, and this can add up given that most programs need access to the memory to store data. To speed up address translation, the CPU has dedicated hardware for caching (storing) recent address translations called a\n\ntranslation lookaside buffer (TLB). A TLB is a memory cache that stores the virtual memory recent transaction to physical memory. TLBs help the CPU avoid making multiple round trips to main memory just to resolve a single virtual memory access by only requiring one round trip (Figure 6.31)."
+    }
+  },
+  {
+    "query_id": "t07",
+    "split": "test",
+    "config": "dense",
+    "model": "anthropic/claude-haiku-5.5",
+    "question": "After a website has set the two-factor authentication cookie, when is two-factor authentication required again?",
+    "filter": null,
+    "answerable": true,
+    "events": [
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "search_documents"
+        ],
+        "prompt_tokens": 1168,
+        "completion_tokens": 50,
+        "cost_usd": 0.0001418,
+        "latency_ms": 1279.7,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "strategy": "dense[B]",
+        "forced": false,
+        "query": "two-factor authentication cookie website required again",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "B:openstax-intro-cs:p290:c1",
+            "page": 290,
+            "rank": 1,
+            "score": 0.8893
+          },
+          {
+            "id": "B:openstax-intro-cs:p290:c2",
+            "page": 290,
+            "rank": 2,
+            "score": 0.87385
+          },
+          {
+            "id": "B:openstax-intro-cs:p290:c0",
+            "page": 290,
+            "rank": 3,
+            "score": 0.82548
+          }
+        ],
+        "added_ids": [
+          "B:openstax-intro-cs:p290:c1",
+          "B:openstax-intro-cs:p290:c2",
+          "B:openstax-intro-cs:p290:c0"
+        ],
+        "truncated_ids": [],
+        "not_included_ids": [],
+        "context_chars": 2475,
+        "elapsed_ms": 146.2
+      },
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "submit_answer"
+        ],
+        "prompt_tokens": 1996,
+        "completion_tokens": 216,
+        "cost_usd": 0.0003076,
+        "latency_ms": 1569.6,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_searches": 1,
+    "context": "[B:openstax-intro-cs:p290:c1 | intro_cs.pdf | page 290 | section 6.6]\nAnother form of authentication is two-factor authentication, which involves two factors: the system calls or texts a user’s phone for the traditional password during login, employing the cell phone as a key. For example, a site sends a text message to a user’s phone with a one-time passcode. The user must read the passcode from the phone and type it into the login page.\n\nIn two-factor authentication, an attacker must have both your password and cell phone to hijack your account. This approach is particularly effective for authenticating to websites, as the requiring of both the password and the physical cell phone is a sufficient deterrent. To enhance efficiency, the two-factor authentication process can be optimized for websites. Once the authentication is completed, a cookie is loaded into your browser. This cookie then transforms your browser into a type of key, granting you the ability to log in with the password as long as the cookie persists.\n\n[B:openstax-intro-cs:p290:c2 | intro_cs.pdf | page 290 | section 6.6]\nWhenever a user needs to log in from a different browser or different machine, two-factor authentication is used again. After logging in, the user id is associated with every process executed under that login because the user id is stored in the process control block and children inherit the user id from their parents. Once authentication is complete, the next step of protection is authorization.\n\n[B:openstax-intro-cs:p290:c0 | intro_cs.pdf | page 290 | section 6.6]\nSecurity\n\nThe process of checking to see if a user’s credentials match the credentials in a database of authorized users or in a data authentication server is called authentication. The traditional means of authentication involves the user providing a password, which is a secret piece of information that is used to establish the identity of a user and should be relatively long and hard to guess. Most systems store the passwords in a password database. A password database must be protected because it is vulnerable most of the time. For example, both organizations and users should avoid storing passwords in a directly readable form.\n\nAn alternate form of authentication involves using a badge or key. The badge is a logical access system. The badge does not have to be kept secret. It can be counterfeit, but if it is, the owner will know. The badge must be cheap to make but hard to duplicate.",
+    "context_ids": [
+      "B:openstax-intro-cs:p290:c1",
+      "B:openstax-intro-cs:p290:c2",
+      "B:openstax-intro-cs:p290:c0"
+    ],
+    "context_chars": 2475,
+    "prompt_tokens": 3164,
+    "completion_tokens": 266,
+    "cost_usd": 0.000449,
+    "llm_calls": 2,
+    "llm_ms": 2849.3,
+    "status": "answered",
+    "answer": "Two-factor authentication is used again whenever the user needs to log in from a different browser or different machine. While the cookie persists, the browser can log in with the password alone. [B:openstax-intro-cs:p290:c1] [B:openstax-intro-cs:p290:c2]",
+    "citations": [
+      "B:openstax-intro-cs:p290:c1",
+      "B:openstax-intro-cs:p290:c2"
+    ],
+    "raw_answer": "Two-factor authentication is used again whenever the user needs to log in from a different browser or different machine. While the cookie persists, the browser can log in with the password alone. [B:openstax-intro-cs:p290:c1] [B:openstax-intro-cs:p290:c2]",
+    "latency_ms": 2996.1,
+    "context_hit": true,
+    "first_search_hit_rank": 2,
+    "cited_evidence": true,
+    "cited_blocks": {
+      "B:openstax-intro-cs:p290:c1": "[B:openstax-intro-cs:p290:c1 | intro_cs.pdf | page 290 | section 6.6]\nAnother form of authentication is two-factor authentication, which involves two factors: the system calls or texts a user’s phone for the traditional password during login, employing the cell phone as a key. For example, a site sends a text message to a user’s phone with a one-time passcode. The user must read the passcode from the phone and type it into the login page.\n\nIn two-factor authentication, an attacker must have both your password and cell phone to hijack your account. This approach is particularly effective for authenticating to websites, as the requiring of both the password and the physical cell phone is a sufficient deterrent. To enhance efficiency, the two-factor authentication process can be optimized for websites. Once the authentication is completed, a cookie is loaded into your browser. This cookie then transforms your browser into a type of key, granting you the ability to log in with the password as long as the cookie persists.",
+      "B:openstax-intro-cs:p290:c2": "[B:openstax-intro-cs:p290:c2 | intro_cs.pdf | page 290 | section 6.6]\nWhenever a user needs to log in from a different browser or different machine, two-factor authentication is used again. After logging in, the user id is associated with every process executed under that login because the user id is stored in the process control block and children inherit the user id from their parents. Once authentication is complete, the next step of protection is authorization."
+    }
+  },
+  {
+    "query_id": "t08",
+    "split": "test",
+    "config": "dense",
+    "model": "anthropic/claude-haiku-5.5",
+    "question": "Which file system operation resets a file's length to zero and releases its allocated space?",
+    "filter": null,
+    "answerable": true,
+    "events": [
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "search_documents"
+        ],
+        "prompt_tokens": 1163,
+        "completion_tokens": 56,
+        "cost_usd": 0.0001443,
+        "latency_ms": 1259.1,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "strategy": "dense[B]",
+        "forced": false,
+        "query": "file system operation truncate reset file length to zero release allocated space",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "B:openstax-intro-cs:p286:c1",
+            "page": 286,
+            "rank": 1,
+            "score": 0.90048
+          },
+          {
+            "id": "B:openstax-intro-cs:p292:c1",
+            "page": 292,
+            "rank": 2,
+            "score": 0.85072
+          },
+          {
+            "id": "B:openstax-intro-cs:p277:c1",
+            "page": 277,
+            "rank": 3,
+            "score": 0.84881
+          }
+        ],
+        "added_ids": [
+          "B:openstax-intro-cs:p286:c1",
+          "B:openstax-intro-cs:p292:c1",
+          "B:openstax-intro-cs:p277:c1"
+        ],
+        "truncated_ids": [],
+        "not_included_ids": [],
+        "context_chars": 2921,
+        "elapsed_ms": 94.8
+      },
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "submit_answer"
+        ],
+        "prompt_tokens": 2179,
+        "completion_tokens": 155,
+        "cost_usd": 0.0002954,
+        "latency_ms": 1406.0,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "n_searches": 1,
+    "context": "[B:openstax-intro-cs:p286:c1 | intro_cs.pdf | page 286 | section 6.5]\n• Create: Find a space for the file in the disk and enter the new file information in the directory.\n• Write: Search the directory for a specific file and start writing from where the writing pointer is pointing to.\n• Read: Specify the name of the file and start reading from where the reading pointer is pointing to.\n• Seek: Search for the specific byte position in the file.\n• Delete: Search for the file in the directory and erase the file from the directory.\n• Truncate: Reset the file length to zero and release the allocated space for the file.\n• Append: Add new information to the end of the file.\n• Copy: Create a new file and read the data from an old file, then write it to the new one.\n\nIf multiple processes are trying to open a file at the same time, then there is a role for file management that should be applied—namely, lock.\n\nLINK TO LEARNING\n\n[B:openstax-intro-cs:p292:c1 | intro_cs.pdf | page 292 | section 6.6]\nblock, create a reference for the new block in the inode. Using this approach, you’ll guarantee that you’ll never write a pointer prior to initializing the block to which it points without validation. The validation will force the system to never clear the last pointer prior to setting a new pointer. The advantage of this approach is that it reduces the time spent waiting, as there is no need to wait for fsck while rebooting. However, there are several drawbacks, such as the potential for resource leaks (e.g., when the system runs fsck to recover some lost resources). Another drawback is that this approach slows file operation because writing while running the system requires considerable metadata.\n• Perform write-ahead logging. This term is known as journaling file system and refers to the practice of recording the changes in the information in a separate log file sometimes called a journal file. These changes will be recorded prior to any new change or update on the system.\n\n[B:openstax-intro-cs:p277:c1 | intro_cs.pdf | page 277 | section 6.3]\nIn contiguous allocation, each file is assigned to a contiguous (i.e., neighboring) set of blocks in the memory. For example, if a file requires three blocks and is given a starting location x, the file will be allocated in x, x + 1, x + 2. The directory entry with contiguous allocation contains the starting block address and the length of the file. In linked allocation, each file is a linked list of memory blocks. Using the same example, the first block will be allocated in location x and it will include the address of the second block. The directory entry with linked allocation contains a pointer to the starting block and a pointer to the last block. In indexed allocation, each file has an index block containing the pointers to all blocks for that file.\n\n6.4 Memory Management\n\nLearning Objectives By the end of this section, you will be able to:",
+    "context_ids": [
+      "B:openstax-intro-cs:p286:c1",
+      "B:openstax-intro-cs:p292:c1",
+      "B:openstax-intro-cs:p277:c1"
+    ],
+    "context_chars": 2921,
+    "prompt_tokens": 3342,
+    "completion_tokens": 211,
+    "cost_usd": 0.00044,
+    "llm_calls": 2,
+    "llm_ms": 2665.1,
+    "status": "answered",
+    "answer": "The Truncate operation: it resets the file length to zero and releases the allocated space for the file [B:openstax-intro-cs:p286:c1].",
+    "citations": [
+      "B:openstax-intro-cs:p286:c1"
+    ],
+    "raw_answer": "The Truncate operation: it resets the file length to zero and releases the allocated space for the file [B:openstax-intro-cs:p286:c1].",
+    "latency_ms": 2760.5,
+    "context_hit": true,
+    "first_search_hit_rank": 1,
+    "cited_evidence": true,
+    "cited_blocks": {
+      "B:openstax-intro-cs:p286:c1": "[B:openstax-intro-cs:p286:c1 | intro_cs.pdf | page 286 | section 6.5]\n• Create: Find a space for the file in the disk and enter the new file information in the directory.\n• Write: Search the directory for a specific file and start writing from where the writing pointer is pointing to.\n• Read: Specify the name of the file and start reading from where the reading pointer is pointing to.\n• Seek: Search for the specific byte position in the file.\n• Delete: Search for the file in the directory and erase the file from the directory.\n• Truncate: Reset the file length to zero and release the allocated space for the file.\n• Append: Add new information to the end of the file.\n• Copy: Create a new file and read the data from an old file, then write it to the new one.\n\nIf multiple processes are trying to open a file at the same time, then there is a role for file management that should be applied—namely, lock.\n\nLINK TO LEARNING"
+    }
+  },
+  {
+    "query_id": "ut01",
+    "split": "test",
+    "config": "dense",
+    "model": "anthropic/claude-haiku-5.5",
+    "question": "What is the default time quantum used by the Linux Completely Fair Scheduler?",
+    "filter": null,
+    "answerable": false,
+    "events": [
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "search_documents"
+        ],
+        "prompt_tokens": 1165,
+        "completion_tokens": 56,
+        "cost_usd": 0.0001445,
+        "latency_ms": 1024.4,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "strategy": "dense[B]",
+        "forced": false,
+        "query": "Linux Completely Fair Scheduler default time quantum",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "B:openstax-intro-cs:p275:c0",
+            "page": 275,
+            "rank": 1,
+            "score": 0.85799
+          },
+          {
+            "id": "B:openstax-intro-cs:p278:c1",
+            "page": 278,
+            "rank": 2,
+            "score": 0.83943
+          },
+          {
+            "id": "B:openstax-intro-cs:p273:c1",
+            "page": 273,
+            "rank": 3,
+            "score": 0.83164
+          }
+        ],
+        "added_ids": [
+          "B:openstax-intro-cs:p275:c0",
+          "B:openstax-intro-cs:p278:c1",
+          "B:openstax-intro-cs:p273:c1"
+        ],
+        "truncated_ids": [],
+        "not_included_ids": [],
+        "context_chars": 3031,
+        "elapsed_ms": 79.9
+      },
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "search_documents"
+        ],
+        "prompt_tokens": 2281,
+        "completion_tokens": 56,
+        "cost_usd": 0.0002561,
+        "latency_ms": 1085.9,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "strategy": "dense[B]",
+        "forced": false,
+        "query": "CFS Linux scheduler time slice default milliseconds",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "B:openstax-intro-cs:p278:c1",
+            "page": 278,
+            "rank": 1,
+            "score": 0.86611
+          },
+          {
+            "id": "B:openstax-intro-cs:p274:c2",
+            "page": 274,
+            "rank": 2,
+            "score": 0.84769
+          },
+          {
+            "id": "B:openstax-intro-cs:p273:c1",
+            "page": 273,
+            "rank": 3,
+            "score": 0.83776
+          }
+        ],
+        "added_ids": [],
+        "truncated_ids": [],
+        "not_included_ids": [
+          "B:openstax-intro-cs:p274:c2"
+        ],
+        "context_chars": 3031,
+        "elapsed_ms": 93.7
+      },
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "search_documents"
+        ],
+        "prompt_tokens": 2461,
+        "completion_tokens": 51,
+        "cost_usd": 0.0002716,
+        "latency_ms": 1317.1,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "strategy": "dense[B]",
+        "forced": false,
+        "query": "Completely Fair Scheduler Linux",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "B:openstax-intro-cs:p274:c1",
+            "page": 274,
+            "rank": 1,
+            "score": 0.8389
+          },
+          {
+            "id": "B:openstax-intro-cs:p214:c1",
+            "page": 214,
+            "rank": 2,
+            "score": 0.83072
+          },
+          {
+            "id": "B:openstax-intro-cs:p272:c2",
+            "page": 272,
+            "rank": 3,
+            "score": 0.82819
+          }
+        ],
+        "added_ids": [],
+        "truncated_ids": [],
+        "not_included_ids": [
+          "B:openstax-intro-cs:p274:c1",
+          "B:openstax-intro-cs:p214:c1",
+          "B:openstax-intro-cs:p272:c2"
+        ],
+        "context_chars": 3031,
+        "elapsed_ms": 59.1
+      },
+      {
+        "event": "llm",
+        "forced_final": true,
+        "tool_calls": [
+          "submit_answer"
+        ],
+        "prompt_tokens": 2523,
+        "completion_tokens": 146,
+        "cost_usd": 0.0003253,
+        "latency_ms": 1306.7,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "n_searches": 3,
+    "context": "[B:openstax-intro-cs:p275:c0 | intro_cs.pdf | page 275 | section 6.3]\nquantum, to each process in the ready queue. The CPU scheduler cycles through the queue, allocating the CPU to each process for a duration equal to 1 quantum. For the previous example, let us set the quantum to 2. Then, the processor will execute part of process P1 and move to process P2 then go back to process P1 (Figure 6.23).\n\nFigure 6.23 Two processes, P1 and P2, are being processed using the RR algorithm.\n\n• shortest time to completion first (STCF), also called shortest job first (SJF): This algorithm takes the best approach to minimize the waiting time, but it requires that the processor knows the processing time in advance. In the previous example, the processor will run process P2 before process P1 because the execution time is less.\n• shortest remaining processing time (SRPT): In SRPT, the processor is reallocated to a newer ready job with a shorter remaining completion time whenever such a job arrives.\n\nSynchronization\n\n[B:openstax-intro-cs:p278:c1 | intro_cs.pdf | page 278 | section 6.4]\nTime slicing provides a time frame for each process to run in a preemptive multitasking CPU such that each process runs every single time slice. If the process finishes the job before the time slice, it releases the CPU and does not need to be swapped out. If the time slice ends and the process did not finish the job, the CPU shifts it out to the end of the processes queue. For example, assume we have three processes P1 with execution time 3 ms, P2 with execution time 4 ms, and P3 with execution time 2 ms, and a time slice of 2 ms. Figure 6.26 illustrates how the CPU manages the processing using time slice and indicates in which time slice each process completes execution.\n\nFigure 6.26 The three processes P1, P2, and P3 (blue) will work as scheduled based on the time slice. The processes are scheduled in the queue and executed, so they come out of the queue (arrow). Empty spaces in the queue are shown in pink.\n\n[B:openstax-intro-cs:p273:c1 | intro_cs.pdf | page 273 | section 6.3]\nFigure 6.20 represents a process’s life cycle within an OS. It starts with the creation of a process, which brings a new process into existence and places it in the ready state. In this state, the process is loaded into memory and is prepared to run, but is waiting for the CPU to become available. When the scheduler dispatches the process, it transitions to the running state, where it is actively executing its instructions. If the process is interrupted, it reverts to the ready state, waiting once again for a chance to run. Certain events, such as I/O requests or page faults, can cause the running process to experience a trap or exception. When this happens, the process enters the blocked state because it can’t proceed until the event it’s waiting for, such as the completion of an I/O operation, occurs. Once the awaited event is finished, the process can leave the blocked state and reenter the ready state, once again waiting for CPU time.",
+    "context_ids": [
+      "B:openstax-intro-cs:p275:c0",
+      "B:openstax-intro-cs:p278:c1",
+      "B:openstax-intro-cs:p273:c1"
+    ],
+    "context_chars": 3031,
+    "prompt_tokens": 8430,
+    "completion_tokens": 309,
+    "cost_usd": 0.000997,
+    "llm_calls": 4,
+    "llm_ms": 4734.1,
+    "status": "abstain",
+    "answer": "The retrieved passages do not state the default time quantum used by the Linux Completely Fair Scheduler. They only describe round-robin quanta and time slices generally, with no CFS-specific default value.",
+    "citations": [],
+    "raw_answer": "The retrieved passages do not state the default time quantum used by the Linux Completely Fair Scheduler. They only describe round-robin quanta and time slices generally, with no CFS-specific default value.",
+    "latency_ms": 4967.9,
+    "cited_blocks": {}
+  },
+  {
+    "query_id": "ut02",
+    "split": "test",
+    "config": "dense",
+    "model": "anthropic/claude-haiku-5.5",
+    "question": "How much L3 cache does Apple's M2 chip have?",
+    "filter": null,
+    "answerable": false,
+    "events": [
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "search_documents"
+        ],
+        "prompt_tokens": 1158,
+        "completion_tokens": 50,
+        "cost_usd": 0.0001408,
+        "latency_ms": 1179.2,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "strategy": "dense[B]",
+        "forced": false,
+        "query": "Apple M2 chip L3 cache",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "B:openstax-intro-cs:p234:c3",
+            "page": 234,
+            "rank": 1,
+            "score": 0.86854
+          },
+          {
+            "id": "B:openstax-intro-cs:p232:c4",
+            "page": 232,
+            "rank": 2,
+            "score": 0.84382
+          },
+          {
+            "id": "B:openstax-intro-cs:p234:c2",
+            "page": 234,
+            "rank": 3,
+            "score": 0.84075
+          }
+        ],
+        "added_ids": [
+          "B:openstax-intro-cs:p234:c3",
+          "B:openstax-intro-cs:p232:c4",
+          "B:openstax-intro-cs:p234:c2"
+        ],
+        "truncated_ids": [],
+        "not_included_ids": [],
+        "context_chars": 1854,
+        "elapsed_ms": 62.6
+      },
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "submit_answer"
+        ],
+        "prompt_tokens": 1915,
+        "completion_tokens": 208,
+        "cost_usd": 0.0002955,
+        "latency_ms": 1762.5,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "n_searches": 1,
+    "context": "[B:openstax-intro-cs:p234:c3 | intro_cs.pdf | page 234 | section 5.5]\nTo have a faster cache, we must make it smaller in capacity, but smaller cache decreases hit rate, which is the number, usually a percentage, of times the cache was used to retrieve data. We cannot easily have faster memory to reduce M so the solution is to have more than one level of caches. Level 1 (L1), closest to the processor, is small in capacity and very fast but with a potentially low hit rate. When there is L1 cache miss, instead of going to the memory off-chip, we go to L2 cache, which is still on chip and bigger in capacity than L1. Most processors now have up to three levels of caches, as shown in Figure 5.25.\n\n[B:openstax-intro-cs:p232:c4 | intro_cs.pdf | page 232 | section 5.5]\nHowever, if the processor instead needs A[17], then we have another cache miss and the cache gets to the memory again to bring several elements, including A[17].\n\n[B:openstax-intro-cs:p234:c2 | intro_cs.pdf | page 234 | section 5.5]\nAs you have learned, cache memory is used as a fast, small memory inside the processor to close the gap between the processor speed and the memory speed. Given that latency is the rate of data transfer, assume DRAM memory’s access latency is M cycles and the cache access latency is m. Also assume that for a specific program the probability of cache hits = p. Then the average latency of the combined cache + Memory = mp + (1 – p)(M + m) = m + (1 – p)M.\n\nRemember that whenever there is a cache miss, we have already spent m cycles searching the cache, then we go to the memory, which takes another M cycles. If we look at the equation m + (1 – p)M, we see that to get good performance, we need to do one or more of the following things:\n\n• Have a faster cache and lower m.\n• Increase cache hit rate and reduce p.\n• Have a faster memory and lower M.",
+    "context_ids": [
+      "B:openstax-intro-cs:p234:c3",
+      "B:openstax-intro-cs:p232:c4",
+      "B:openstax-intro-cs:p234:c2"
+    ],
+    "context_chars": 1854,
+    "prompt_tokens": 3073,
+    "completion_tokens": 258,
+    "cost_usd": 0.000436,
+    "llm_calls": 2,
+    "llm_ms": 2941.7,
+    "status": "abstain",
+    "answer": "The passages do not mention Apple's M2 chip or its L3 cache size. They only say that most processors now have up to three cache levels, with L1 closest to the processor and L2 on chip [B:openstax-intro-cs:p234:c3], so the M2's L3 capacity cannot be determined from this collection.",
+    "citations": [],
+    "raw_answer": "The passages do not mention Apple's M2 chip or its L3 cache size. They only say that most processors now have up to three cache levels, with L1 closest to the processor and L2 on chip [B:openstax-intro-cs:p234:c3], so the M2's L3 capacity cannot be determined from this collection.",
+    "latency_ms": 3004.7,
+    "cited_blocks": {}
+  },
+  {
+    "query_id": "ut03",
+    "split": "test",
+    "config": "dense",
+    "model": "anthropic/claude-haiku-5.5",
+    "question": "In what year did Microsoft first introduce the NTFS file system?",
+    "filter": null,
+    "answerable": false,
+    "events": [
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "search_documents"
+        ],
+        "prompt_tokens": 1160,
+        "completion_tokens": 52,
+        "cost_usd": 0.000142,
+        "latency_ms": 3103.3,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "strategy": "dense[B]",
+        "forced": false,
+        "query": "Microsoft NTFS file system introduced year",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "B:openstax-intro-cs:p285:c4",
+            "page": 285,
+            "rank": 1,
+            "score": 0.85336
+          },
+          {
+            "id": "B:openstax-intro-cs:p287:c1",
+            "page": 287,
+            "rank": 2,
+            "score": 0.8292
+          },
+          {
+            "id": "B:openstax-intro-cs:p285:c5",
+            "page": 285,
+            "rank": 3,
+            "score": 0.8288
+          }
+        ],
+        "added_ids": [
+          "B:openstax-intro-cs:p285:c4",
+          "B:openstax-intro-cs:p287:c1",
+          "B:openstax-intro-cs:p285:c5"
+        ],
+        "truncated_ids": [],
+        "not_included_ids": [],
+        "context_chars": 2921,
+        "elapsed_ms": 71.3
+      },
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "search_documents"
+        ],
+        "prompt_tokens": 2153,
+        "completion_tokens": 52,
+        "cost_usd": 0.0002413,
+        "latency_ms": 1048.9,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "strategy": "dense[B]",
+        "forced": false,
+        "query": "NTFS introduced with Windows NT release date",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "B:openstax-intro-cs:p285:c4",
+            "page": 285,
+            "rank": 1,
+            "score": 0.84692
+          },
+          {
+            "id": "B:openstax-intro-cs:p292:c2",
+            "page": 292,
+            "rank": 2,
+            "score": 0.83181
+          },
+          {
+            "id": "B:openstax-intro-cs:p234:c0",
+            "page": 234,
+            "rank": 3,
+            "score": 0.8289
+          }
+        ],
+        "added_ids": [],
+        "truncated_ids": [],
+        "not_included_ids": [
+          "B:openstax-intro-cs:p292:c2",
+          "B:openstax-intro-cs:p234:c0"
+        ],
+        "context_chars": 2921,
+        "elapsed_ms": 78.8
+      },
+      {
+        "event": "llm",
+        "forced_final": false,
+        "tool_calls": [
+          "search_documents"
+        ],
+        "prompt_tokens": 2325,
+        "completion_tokens": 47,
+        "cost_usd": 0.000256,
+        "latency_ms": 1810.3,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "search",
+        "tool": "search_documents",
+        "strategy": "dense[B]",
+        "forced": false,
+        "query": "New Technology File System history 1993",
+        "filter": null,
+        "top_k": 3,
+        "results": [
+          {
+            "id": "B:openstax-intro-cs:p292:c4",
+            "page": 292,
+            "rank": 1,
+            "score": 0.83086
+          },
+          {
+            "id": "B:openstax-intro-cs:p285:c4",
+            "page": 285,
+            "rank": 2,
+            "score": 0.81208
+          },
+          {
+            "id": "B:openstax-intro-cs:p230:c0",
+            "page": 230,
+            "rank": 3,
+            "score": 0.81082
+          }
+        ],
+        "added_ids": [],
+        "truncated_ids": [],
+        "not_included_ids": [
+          "B:openstax-intro-cs:p292:c4",
+          "B:openstax-intro-cs:p230:c0"
+        ],
+        "context_chars": 2921,
+        "elapsed_ms": 68.3
+      },
+      {
+        "event": "llm",
+        "forced_final": true,
+        "tool_calls": [
+          "submit_answer"
+        ],
+        "prompt_tokens": 2387,
+        "completion_tokens": 166,
+        "cost_usd": 0.0003217,
+        "latency_ms": 1370.6,
+        "model": "anthropic/claude-haiku-5.5",
+        "text": ""
+      },
+      {
+        "event": "abstain"
+      }
+    ],
+    "n_searches": 3,
+    "context": "[B:openstax-intro-cs:p285:c4 | intro_cs.pdf | page 285 | section 6.5]\nThis process may involve multiple steps if the file is in a nested directory structure.\n• Windows (File Allocation Table and NTFS): In File Allocation Table (FAT) format, files are located using a table that maps file names to the clusters (blocks) on the disk where their data is stored. The FAT is essentially a list, with each entry containing the location of the next part of the file. This creates a chain that the OS follows to read the entire file. In New Technology File System (NTFS), files are located using a Master File Table (MFT), and each file and directory on an NTFS volume has an entry in the MFT containing data, including the file name, size, time stamps, permissions, and the locations of the file’s data on disk.\n\nWhen searching for a file, the OS consults the MFT to find the entry corresponding to the file name, which then provides the information necessary to access the file’s data.\n\n[B:openstax-intro-cs:p287:c1 | intro_cs.pdf | page 287 | section 6.5]\nA distributed file system (DFS) is a file system that is distributed on multiple file servers or multiple locations that support network-wide sharing of files and devices. The presentation of a DFS is similar to the traditional view (i.e., client is using a file system). The main idea of a DFS is that it uses a namespace, which means all clients see a single namespace where files and directories are shared across the network. In a DFS, clients can read and write files on a remote machine as if they were accessing their local disks. A DFS provides an abstraction over physical disks that is akin to the abstraction virtual memory provides over physical memory (Figure 6.35).\n\nFigure 6.35 In a distributed file system architecture, the DFS server works like a middleman between the end user and the data, which can be in any storage format.\n\n[B:openstax-intro-cs:p285:c5 | intro_cs.pdf | page 285 | section 6.5]\nAs you may recall, files represent values stored on disk and directories represent file metadata. File systems define operations on objects such as create, read, and write, and they may also provide higher-level services such as accounting and quotas, incremental backup indexing or search, file versioning, and encryption. A quota is the amount of space to store files based on the available memory space. Quotas are used to protect the system from unnecessary load and help in organizing the data in the storage. An incremental backup is a backup image containing the pages that have been updated from the time of the previous backup. The method that converts the data into secret code that hides the data’s true meaning is called encryption. The system that allows a file to exist in several versions at the same time, which gives the user complete control over file creation as in the file versioning example, is called file versioning (Figure 6.33).",
+    "context_ids": [
+      "B:openstax-intro-cs:p285:c4",
+      "B:openstax-intro-cs:p287:c1",
+      "B:openstax-intro-cs:p285:c5"
+    ],
+    "context_chars": 2921,
+    "prompt_tokens": 8025,
+    "completion_tokens": 317,
+    "cost_usd": 0.000961,
+    "llm_calls": 4,
+    "llm_ms": 7333.1,
+    "status": "abstain",
+    "answer": "The passages do not state the year Microsoft introduced NTFS. They only describe NTFS as the New Technology File System that uses a Master File Table [B:openstax-intro-cs:p285:c4].",
+    "citations": [],
+    "raw_answer": "The passages do not state the year Microsoft introduced NTFS. They only describe NTFS as the New Technology File System that uses a Master File Table [B:openstax-intro-cs:p285:c4].",
+    "latency_ms": 7552.8,
+    "cited_blocks": {}
+  }
+]

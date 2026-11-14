@@ -36,6 +36,20 @@ OVERRIDES: dict[tuple[str, str, str], dict] = {
 for cfg in ("dense", "bm25", "hybrid", "dense_origfirst", "dense_ctx6400", "dense_combo", "hybrid_combo", "hybrid_rerank_combo"):
     OVERRIDES.setdefault((cfg, "dev", "d15"), {"answer_grade": 2, "reason": D15_ALT})
 
+# Test split: every one of the 22 answers was read; the only deviation from the default:
+OVERRIDES[("dense", "test", "t03")] = {
+    "answer_grade": 2,
+    "citation_support": {"B:openstax-intro-cs:p228:c2": False},
+    "reason": "answer correct and supported by p229:c0 (gold); the second sentence ('several technologies are combined in a "
+              "memory hierarchy') cites only p228:c2, which says no single technology excels but not that they are combined "
+              "in a hierarchy (that is p229:c0) -> p228:c2 counted as not supporting (strict)",
+}
+
+# Manual context grade on test (BENCHMARK.md section 2): 0 = no evidence, 1 = evidence but missing condition/source,
+# 2 = full evidence with source and page. Read for all 8 answerable test questions of both configs: in every case the
+# full gold sentence (including the condition for t02/t07) is in the final context with its [id | source | page] header.
+CONTEXT_GRADE_DEFAULT = (2, "full gold evidence sentence present in the final context with id, source and page header")
+
 
 def build_reviews(cfg: str, split: str) -> list[dict]:
     traces = config.load_json(config.RESULTS_DIR / "agent" / cfg / split / "traces.json")
@@ -54,6 +68,10 @@ def build_reviews(cfg: str, split: str) -> list[dict]:
             r["answer_grade"] = grade
             r["reason"] = o.get("reason") or ("correct and complete; cited chunk(s) contain the gold evidence"
                                               if t.get("cited_evidence") else "REVIEW: no default reason")
+            if split == "test":
+                if not t.get("context_hit"):
+                    raise ValueError(f"{cfg}/{t['query_id']}: context grade needs an explicit label")
+                r["context_grade"], r["context_reason"] = CONTEXT_GRADE_DEFAULT
         else:
             r["abstention_correct"] = o.get("abstention_correct", t["status"] == "abstain")
             r["reason"] = o.get("reason") or ("searched, abstained and named what is missing; no unsupported claim"

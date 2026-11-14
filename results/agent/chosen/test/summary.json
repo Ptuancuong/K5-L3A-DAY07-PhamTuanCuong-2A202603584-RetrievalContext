@@ -1,0 +1,52 @@
+{
+  "config": "chosen",
+  "split": "test",
+  "model": "anthropic/claude-haiku-5.5",
+  "retrieval": {
+    "method": "hybrid",
+    "index": "B",
+    "depth": 20,
+    "rrf_k": 60
+  },
+  "top_k": 3,
+  "context": {
+    "budget": 6400,
+    "mode": "truncate"
+  },
+  "max_searches": 3,
+  "first_search": "original_question",
+  "N": 11,
+  "answerable": 8,
+  "unanswerable": 3,
+  "errors": 0,
+  "error_ids": [],
+  "status": {
+    "answered": 8,
+    "abstain": 3
+  },
+  "tool_use": "11/11 (100.0%)",
+  "searches_distribution": {
+    "1": 7,
+    "2": 1,
+    "3": 3
+  },
+  "mean_searches": 1.64,
+  "mean_llm_calls": 1.64,
+  "context_evidence_rate": "8/8 (100.0%)",
+  "answers_citing_gold_chunk": "8/8 (100.0%)",
+  "abstain_on_unanswerable_status": "3/3 (100.0%)",
+  "false_abstention_status": "0/8 (0.0%)",
+  "answered_with_citations": "8/8 (100.0%)",
+  "avg_context_chars": 3460.6,
+  "prompt_tokens": 43683,
+  "completion_tokens": 2408,
+  "cost_usd": 0.00557,
+  "latency_ms_per_question": {
+    "median": 2000.7,
+    "mean": 2573.8,
+    "max": 4651.6
+  },
+  "wall_seconds": 8.2,
+  "note": "abstention/false-abstention here are status-based; answer grade, citation support and abstention correctness come from manual labels (reviews.json).",
+  "cost_usd_per_question": 0.000506
+}

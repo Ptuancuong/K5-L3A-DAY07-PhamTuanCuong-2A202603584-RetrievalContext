@@ -1,0 +1,113 @@
+[
+  {
+    "query_id": "t01",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence",
+    "context_grade": 2,
+    "context_reason": "full gold evidence sentence present in the final context with id, source and page header"
+  },
+  {
+    "query_id": "t02",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence",
+    "context_grade": 2,
+    "context_reason": "full gold evidence sentence present in the final context with id, source and page header"
+  },
+  {
+    "query_id": "t03",
+    "citation_support": [
+      true,
+      false
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "answer correct and supported by p229:c0 (gold); the second sentence ('several technologies are combined in a memory hierarchy') cites only p228:c2, which says no single technology excels but not that they are combined in a hierarchy (that is p229:c0) -> p228:c2 counted as not supporting (strict)",
+    "context_grade": 2,
+    "context_reason": "full gold evidence sentence present in the final context with id, source and page header"
+  },
+  {
+    "query_id": "t04",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence",
+    "context_grade": 2,
+    "context_reason": "full gold evidence sentence present in the final context with id, source and page header"
+  },
+  {
+    "query_id": "t05",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence",
+    "context_grade": 2,
+    "context_reason": "full gold evidence sentence present in the final context with id, source and page header"
+  },
+  {
+    "query_id": "t06",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence",
+    "context_grade": 2,
+    "context_reason": "full gold evidence sentence present in the final context with id, source and page header"
+  },
+  {
+    "query_id": "t07",
+    "citation_support": [
+      true,
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence",
+    "context_grade": 2,
+    "context_reason": "full gold evidence sentence present in the final context with id, source and page header"
+  },
+  {
+    "query_id": "t08",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence",
+    "context_grade": 2,
+    "context_reason": "full gold evidence sentence present in the final context with id, source and page header"
+  },
+  {
+    "query_id": "ut01",
+    "citation_support": [],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "abstention_correct": true,
+    "reason": "searched, abstained and named what is missing; no unsupported claim"
+  },
+  {
+    "query_id": "ut02",
+    "citation_support": [],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "abstention_correct": true,
+    "reason": "searched, abstained and named what is missing; no unsupported claim"
+  },
+  {
+    "query_id": "ut03",
+    "citation_support": [],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "abstention_correct": true,
+    "reason": "searched, abstained and named what is missing; no unsupported claim"
+  }
+]

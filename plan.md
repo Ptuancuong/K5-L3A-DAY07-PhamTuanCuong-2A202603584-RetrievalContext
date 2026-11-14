@@ -1,5 +1,14 @@
 # Kế hoạch làm Lab Day 7 — Agentic RAG
 
+> **Trạng thái (2026-11-14):** phần cơ bản đã làm xong. Báo cáo ở [report/individual/2A202603584_PhamTuanCuong.md](report/individual/2A202603584_PhamTuanCuong.md).
+>
+> Việc còn lại của tác giả trước khi nộp:
+>
+> 1. Duyệt nhãn trong `results/agent/*/*/reviews.json`. Đây là nhãn nháp do AI soạn; các override kèm lý do nằm trong `src/labels.py`.
+> 2. Push lên repo cá nhân và cấp quyền xem cho người chấm.
+>
+> Thử thách nâng cao không thực hiện.
+
 > Tổng hợp từ: README, GUIDE, BENCHMARK, RUBRIC, RULES, SUBMISSION, CHECKPOINTS, PSEUDOCODE, ADVANCED, REPORT_TEMPLATE, starter/README, data/README và code trong `starter/`.
 
 ## 0. Tóm tắt bài lab

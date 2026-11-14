@@ -1,0 +1,1115 @@
+[
+  {
+    "query_id": "t01",
+    "split": "test",
+    "type": "paraphrase",
+    "question": "What piece of software takes a program written in a high-level language and turns it into assembly language?",
+    "filter": null,
+    "strategy": "rrf(dense[B]+bm25)",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p210:c1",
+        "page": 210,
+        "rank": 1,
+        "score": 0.03202,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 4
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p210:c4",
+        "page": 210,
+        "rank": 2,
+        "score": 0.03178,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 5,
+          "bm25": 1
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p211:c1",
+        "page": 211,
+        "rank": 3,
+        "score": 0.03175,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 3
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p211:c0",
+        "page": 211,
+        "rank": 4,
+        "score": 0.03128,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 6,
+          "bm25": 2
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p210:c2",
+        "page": 210,
+        "rank": 5,
+        "score": 0.02942,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7,
+          "bm25": 9
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p221:c3",
+        "page": 221,
+        "rank": 6,
+        "score": 0.02942,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 9,
+          "bm25": 7
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p221:c0",
+        "page": 221,
+        "rank": 7,
+        "score": 0.02924,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 11,
+          "bm25": 6
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p205:c4",
+        "page": 205,
+        "rank": 8,
+        "score": 0.02914,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 14
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p206:c0",
+        "page": 206,
+        "rank": 9,
+        "score": 0.02895,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 18
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p225:c0",
+        "page": 225,
+        "rank": 10,
+        "score": 0.02857,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 10,
+          "bm25": 10
+        }
+      }
+    ],
+    "first_hit_rank": 2,
+    "hit1": false,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p210:c1",
+      "B:openstax-intro-cs:p210:c4",
+      "B:openstax-intro-cs:p211:c1"
+    ],
+    "context_chars": 2207,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 64.2,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 210,
+        "evidence": "A compiler is a piece of software that takes a program written in a given HLL and generates another program"
+      }
+    ]
+  },
+  {
+    "query_id": "t02",
+    "split": "test",
+    "type": "condition",
+    "question": "Between the CPU and memory, which bus is single directional and which is bidirectional, and why is the latter bidirectional?",
+    "filter": null,
+    "strategy": "rrf(dense[B]+bm25)",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p223:c2",
+        "page": 223,
+        "rank": 1,
+        "score": 0.03279,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p223:c3",
+        "page": 223,
+        "rank": 2,
+        "score": 0.03226,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 2
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p207:c0",
+        "page": 207,
+        "rank": 3,
+        "score": 0.0308,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7,
+          "bm25": 3
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p206:c1",
+        "page": 206,
+        "rank": 4,
+        "score": 0.02788,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5,
+          "bm25": 20
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p259:c1",
+        "page": 259,
+        "rank": 5,
+        "score": 0.0276,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 14,
+          "bm25": 11
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p269:c1",
+        "page": 269,
+        "rank": 6,
+        "score": 0.02694,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 10,
+          "bm25": 19
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p229:c1",
+        "page": 229,
+        "rank": 7,
+        "score": 0.01587,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p232:c2",
+        "page": 232,
+        "rank": 8,
+        "score": 0.01562,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 4
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p261:c3",
+        "page": 261,
+        "rank": 9,
+        "score": 0.01562,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p210:c0",
+        "page": 210,
+        "rank": 10,
+        "score": 0.01538,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 5
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p223:c2",
+      "B:openstax-intro-cs:p223:c3",
+      "B:openstax-intro-cs:p207:c0"
+    ],
+    "context_chars": 2790,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 75.0,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 223,
+        "evidence": "the address bus is single directional. But the data bus is bidirectional because you can send data to memory or get data from memory."
+      }
+    ]
+  },
+  {
+    "query_id": "t03",
+    "split": "test",
+    "type": "direct",
+    "question": "What five properties should an ideal memory system have?",
+    "filter": null,
+    "strategy": "rrf(dense[B]+bm25)",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p229:c0",
+        "page": 229,
+        "rank": 1,
+        "score": 0.03279,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p228:c2",
+        "page": 228,
+        "rank": 2,
+        "score": 0.03126,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 5
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p278:c2",
+        "page": 278,
+        "rank": 3,
+        "score": 0.02976,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 12,
+          "bm25": 3
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p277:c3",
+        "page": 277,
+        "rank": 4,
+        "score": 0.02944,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 6,
+          "bm25": 10
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p255:c2",
+        "page": 255,
+        "rank": 5,
+        "score": 0.02813,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 20,
+          "bm25": 4
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p281:c2",
+        "page": 281,
+        "rank": 6,
+        "score": 0.02813,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 20
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p228:c1",
+        "page": 228,
+        "rank": 7,
+        "score": 0.02753,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 8,
+          "bm25": 18
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p251:c3",
+        "page": 251,
+        "rank": 8,
+        "score": 0.01613,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 2
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p259:c3",
+        "page": 259,
+        "rank": 9,
+        "score": 0.01613,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p229:c1",
+        "page": 229,
+        "rank": 10,
+        "score": 0.01538,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p229:c0",
+      "B:openstax-intro-cs:p228:c2",
+      "B:openstax-intro-cs:p278:c2"
+    ],
+    "context_chars": 2147,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 74.1,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 229,
+        "evidence": "This ideal memory system must be fast, dense, persistent, large in capacity, and inexpensive."
+      }
+    ]
+  },
+  {
+    "query_id": "t04",
+    "split": "test",
+    "type": "paraphrase",
+    "question": "In UNIX, which two operations split process creation into two steps?",
+    "filter": null,
+    "strategy": "rrf(dense[B]+bm25)",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p258:c2",
+        "page": 258,
+        "rank": 1,
+        "score": 0.03279,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p272:c1",
+        "page": 272,
+        "rank": 2,
+        "score": 0.03033,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 8,
+          "bm25": 4
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p273:c1",
+        "page": 273,
+        "rank": 3,
+        "score": 0.02991,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 10
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p275:c2",
+        "page": 275,
+        "rank": 4,
+        "score": 0.02783,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 9,
+          "bm25": 15
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p226:c2",
+        "page": 226,
+        "rank": 5,
+        "score": 0.01613,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 2
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p237:c1",
+        "page": 237,
+        "rank": 6,
+        "score": 0.01613,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p271:c1",
+        "page": 271,
+        "rank": 7,
+        "score": 0.01587,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p290:c1",
+        "page": 290,
+        "rank": 8,
+        "score": 0.01587,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 3
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p217:c0",
+        "page": 217,
+        "rank": 9,
+        "score": 0.01538,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 5
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p272:c3",
+        "page": 272,
+        "rank": 10,
+        "score": 0.01538,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p258:c2",
+      "B:openstax-intro-cs:p272:c1",
+      "B:openstax-intro-cs:p273:c1"
+    ],
+    "context_chars": 2603,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 68.2,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 258,
+        "evidence": "splitting the process into two steps using fork and exec functionalities"
+      }
+    ]
+  },
+  {
+    "query_id": "t05",
+    "split": "test",
+    "type": "direct",
+    "question": "At a minimum, what does a process consist of?",
+    "filter": null,
+    "strategy": "rrf(dense[B]+bm25)",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p273:c2",
+        "page": 273,
+        "rank": 1,
+        "score": 0.03128,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 6
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p275:c2",
+        "page": 275,
+        "rank": 2,
+        "score": 0.03055,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7,
+          "bm25": 4
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p273:c1",
+        "page": 273,
+        "rank": 3,
+        "score": 0.02878,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 9,
+          "bm25": 10
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p272:c3",
+        "page": 272,
+        "rank": 4,
+        "score": 0.02862,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 13,
+          "bm25": 7
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p269:c1",
+        "page": 269,
+        "rank": 5,
+        "score": 0.02858,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 11,
+          "bm25": 9
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p273:c3",
+        "page": 273,
+        "rank": 6,
+        "score": 0.0284,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 8,
+          "bm25": 13
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p268:c3",
+        "page": 268,
+        "rank": 7,
+        "score": 0.02762,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 10,
+          "bm25": 15
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p270:c0",
+        "page": 270,
+        "rank": 8,
+        "score": 0.02655,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 19,
+          "bm25": 12
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p271:c0",
+        "page": 271,
+        "rank": 9,
+        "score": 0.02549,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 17,
+          "bm25": 20
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p205:c3",
+        "page": 205,
+        "rank": 10,
+        "score": 0.01639,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 1
+        }
+      }
+    ],
+    "first_hit_rank": null,
+    "hit1": false,
+    "hit3": false,
+    "context_ids": [
+      "B:openstax-intro-cs:p273:c2",
+      "B:openstax-intro-cs:p275:c2",
+      "B:openstax-intro-cs:p273:c1"
+    ],
+    "context_chars": 2815,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": false,
+    "elapsed_ms": 67.7,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 268,
+        "evidence": "A process consists of at least an address space, a CPU state, and a set of OS resources."
+      }
+    ]
+  },
+  {
+    "query_id": "t06",
+    "split": "test",
+    "type": "metadata_filter",
+    "question": "What hardware cache speeds up translating virtual addresses into physical addresses?",
+    "filter": {
+      "chapter": 6
+    },
+    "strategy": "rrf(dense[B]+bm25)",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p281:c2",
+        "page": 281,
+        "rank": 1,
+        "score": 0.03252,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 1
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p281:c3",
+        "page": 281,
+        "rank": 2,
+        "score": 0.03252,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 2
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p258:c3",
+        "page": 258,
+        "rank": 3,
+        "score": 0.03125,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 4
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p259:c3",
+        "page": 259,
+        "rank": 4,
+        "score": 0.0303,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 6,
+          "bm25": 6
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p282:c0",
+        "page": 282,
+        "rank": 5,
+        "score": 0.02957,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 13
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p293:c4",
+        "page": 293,
+        "rank": 6,
+        "score": 0.02947,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5,
+          "bm25": 11
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p293:c5",
+        "page": 293,
+        "rank": 7,
+        "score": 0.02844,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7,
+          "bm25": 14
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p279:c3",
+        "page": 279,
+        "rank": 8,
+        "score": 0.02801,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 14,
+          "bm25": 9
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p278:c3",
+        "page": 278,
+        "rank": 9,
+        "score": 0.02727,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 10,
+          "bm25": 17
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p264:c1",
+        "page": 264,
+        "rank": 10,
+        "score": 0.02724,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 11,
+          "bm25": 16
+        }
+      }
+    ],
+    "first_hit_rank": 2,
+    "hit1": false,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p281:c2",
+      "B:openstax-intro-cs:p281:c3",
+      "B:openstax-intro-cs:p258:c3"
+    ],
+    "context_chars": 2104,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 60.3,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 281,
+        "evidence": "A TLB is a memory cache that stores the virtual memory recent transaction to physical memory"
+      }
+    ]
+  },
+  {
+    "query_id": "t07",
+    "split": "test",
+    "type": "condition",
+    "question": "After a website has set the two-factor authentication cookie, when is two-factor authentication required again?",
+    "filter": null,
+    "strategy": "rrf(dense[B]+bm25)",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p290:c1",
+        "page": 290,
+        "rank": 1,
+        "score": 0.03279,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p290:c2",
+        "page": 290,
+        "rank": 2,
+        "score": 0.03226,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 2
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p290:c0",
+        "page": 290,
+        "rank": 3,
+        "score": 0.0315,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 4
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p289:c3",
+        "page": 289,
+        "rank": 4,
+        "score": 0.03102,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 6,
+          "bm25": 3
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p251:c2",
+        "page": 251,
+        "rank": 5,
+        "score": 0.02838,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 9,
+          "bm25": 12
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p232:c4",
+        "page": 232,
+        "rank": 6,
+        "score": 0.02722,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 12,
+          "bm25": 15
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p275:c2",
+        "page": 275,
+        "rank": 7,
+        "score": 0.02694,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 19,
+          "bm25": 10
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p237:c1",
+        "page": 237,
+        "rank": 8,
+        "score": 0.01562,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p204:c3",
+        "page": 204,
+        "rank": 9,
+        "score": 0.01538,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 5
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p281:c4",
+        "page": 281,
+        "rank": 10,
+        "score": 0.01538,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5
+        }
+      }
+    ],
+    "first_hit_rank": 2,
+    "hit1": false,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p290:c1",
+      "B:openstax-intro-cs:p290:c2",
+      "B:openstax-intro-cs:p290:c0"
+    ],
+    "context_chars": 2475,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 62.0,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 290,
+        "evidence": "Whenever a user needs to log in from a different browser or different machine, two-factor authentication is used again."
+      }
+    ]
+  },
+  {
+    "query_id": "t08",
+    "split": "test",
+    "type": "direct",
+    "question": "Which file system operation resets a file's length to zero and releases its allocated space?",
+    "filter": null,
+    "strategy": "rrf(dense[B]+bm25)",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p286:c1",
+        "page": 286,
+        "rank": 1,
+        "score": 0.03279,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p277:c1",
+        "page": 277,
+        "rank": 2,
+        "score": 0.03151,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5,
+          "bm25": 2
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p285:c5",
+        "page": 285,
+        "rank": 3,
+        "score": 0.03126,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 5
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p284:c2",
+        "page": 284,
+        "rank": 4,
+        "score": 0.02942,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 9,
+          "bm25": 7
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p292:c1",
+        "page": 292,
+        "rank": 5,
+        "score": 0.02941,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 8,
+          "bm25": 8
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p279:c1",
+        "page": 279,
+        "rank": 6,
+        "score": 0.02896,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 15
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p292:c2",
+        "page": 292,
+        "rank": 7,
+        "score": 0.02828,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 19,
+          "bm25": 4
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p284:c3",
+        "page": 284,
+        "rank": 8,
+        "score": 0.02814,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 17,
+          "bm25": 6
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p286:c0",
+        "page": 286,
+        "rank": 9,
+        "score": 0.02791,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7,
+          "bm25": 17
+        }
+      },
+      {
+        "id": "B:openstax-intro-cs:p285:c4",
+        "page": 285,
+        "rank": 10,
+        "score": 0.02762,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 15,
+          "bm25": 10
+        }
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p286:c1",
+      "B:openstax-intro-cs:p277:c1",
+      "B:openstax-intro-cs:p285:c5"
+    ],
+    "context_chars": 2885,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 68.5,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 286,
+        "evidence": "Truncate: Reset the file length to zero and release the allocated space for the file."
+      }
+    ]
+  }
+]

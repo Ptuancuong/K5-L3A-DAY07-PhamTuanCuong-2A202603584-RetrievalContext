@@ -1,0 +1,29 @@
+{
+  "config": "chosen",
+  "strategy": "rrf(dense[B]+bm25)",
+  "split": "test",
+  "N": 8,
+  "top_k": 3,
+  "context": {
+    "budget": 6400,
+    "mode": "truncate"
+  },
+  "hit1": 4,
+  "hit3": 7,
+  "mrr10": 0.688,
+  "context_hit": 7,
+  "avg_context_chars": 2503.2,
+  "latency_ms": {
+    "median": 68.0,
+    "mean": 67.5,
+    "max": 75.0
+  },
+  "setup_seconds": 0.0,
+  "service_cost_usd": 0.0,
+  "missed_at_3": [
+    "t05"
+  ],
+  "hit1_str": "4/8 (50.0%)",
+  "hit3_str": "7/8 (87.5%)",
+  "context_hit_str": "7/8 (87.5%)"
+}
