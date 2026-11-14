@@ -6,11 +6,11 @@
 
 **Các mốc commit:**
 
-| Commit        | Nội dung                                                  |
-| ------------- | --------------------------------------------------------- |
-| `0ddaeee`     | Đóng băng benchmark và tiêu chí chọn, trước mọi lần chạy  |
-| `548ad86`     | Kết quả dev và `configs/chosen.json`, trước khi chạy test |
-| Commit sau đó | Chạy test một lần                                         |
+| Commit    | Nội dung                                                  |
+| --------- | --------------------------------------------------------- |
+| `667c875` | Đóng băng benchmark và tiêu chí chọn, trước mọi lần chạy  |
+| `85812f2` | Kết quả dev và `configs/chosen.json`, trước khi chạy test |
+| `0e6bf9e` | Chạy test một lần                                         |
 
 ## Dữ liệu và benchmark
 
@@ -160,7 +160,7 @@ Cần nói rõ:
     - **Ít câu khó:** không có câu multi-hop bắt buộc nhiều đoạn; chỉ có 3 câu thiếu evidence mỗi split.
     - **Gold chưa đầy đủ:** ví dụ d15.
     - **Không tất định:** LLM vẫn không tất định dù `temperature=0`. Ví dụ, d01 của `dense_ctx6400` đúng chỉ vì LLM viết query khác, không phải nhờ budget lớn hơn. Mỗi cấu hình chỉ chạy **một lần**, nên chênh lệch 1 câu nằm trong nhiễu.
-    - **Nhãn chưa được duyệt:** nhãn thủ công do AI (Claude) soạn sau khi đọc từng câu trả lời và từng chunk được cite. Nhãn được ghi `labeled_by = ... pending author review` và **cần tác giả duyệt lại** trước khi nộp.
+    - **Nhãn do AI soạn nháp, tác giả duyệt:** AI (Claude) soạn nhãn sau khi đọc từng câu trả lời và từng chunk được cite. Tác giả đã duyệt lại toàn bộ và giữ nguyên, ghi `labeled_by = author-reviewed`. Người chấm cũng chính là tác giả, không có người chấm độc lập. Vì nhãn không bị sửa sau khi duyệt, có nguy cơ tác giả bị ảnh hưởng bởi bản nháp.
     - **Rerank:** cross-encoder MS MARCO chỉ hỗ trợ tiếng Anh, nên phù hợp với corpus và câu hỏi tiếng Anh này. Câu hỏi tiếng Việt chưa được thử.
 
 ## Thử thách nâng cao (nếu thực hiện)
@@ -180,4 +180,4 @@ Không thực hiện.
   - Mọi số liệu trong báo cáo lấy từ file trong `results/`, do các lệnh đã chạy sinh ra.
   - Chi phí được đối chiếu với usage của OpenRouter.
   - Citation không chứa gold được đọc nguyên văn bằng `python -m src.show_cited`.
-- **Việc tác giả cần làm:** duyệt lại nhãn trong `reviews.json`, các override được liệt kê kèm lý do trong `src/labels.py`.
+  - Tác giả đã duyệt toàn bộ nhãn trong `reviews.json` và giữ nguyên. Các override kèm lý do được liệt kê trong `src/labels.py`.

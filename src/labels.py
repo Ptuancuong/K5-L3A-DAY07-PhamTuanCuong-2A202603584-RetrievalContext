@@ -7,7 +7,7 @@ Labels were assigned after reading every answer next to the expected answer, and
 text of every cited chunk that does not itself contain the gold evidence
 (`python -m src.compare_answers` and `python -m src.show_cited`). Default label for an answer
 not listed below: grade 2 / citations supported / abstention correct. Every deviation is listed
-explicitly with its reason. Labels are AI-drafted (Claude) and must be confirmed by the author.
+explicitly with its reason. Labels were AI-drafted (Claude), then reviewed by the author and kept unchanged.
 """
 from __future__ import annotations
 
@@ -18,7 +18,7 @@ import sys
 
 from . import config
 
-LABELED_BY = "claude-opus-5.5 draft (read answers + cited chunks); pending author review"
+LABELED_BY = "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)"
 
 D15_ALT = ("correct: definition taken from p274 ('determining which process in the ready state should be moved to "
            "the running state'), equivalent to the gold 'choosing which process to run next'; p274 is not in the gold "

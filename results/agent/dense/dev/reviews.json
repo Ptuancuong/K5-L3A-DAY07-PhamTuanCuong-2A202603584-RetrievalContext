@@ -2,7 +2,7 @@
   {
     "query_id": "d01",
     "citation_support": [],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 0,
     "reason": "false abstention: the LLM's rewritten queries never retrieved p205:c1 (original question ranks it #1), and the 3200-char budget was full after search 1"
   },
@@ -11,7 +11,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -21,7 +21,7 @@
       true,
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -30,7 +30,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -39,7 +39,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -48,7 +48,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -57,7 +57,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -66,7 +66,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -75,7 +75,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -84,7 +84,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -93,7 +93,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -103,7 +103,7 @@
       true,
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -112,7 +112,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -121,7 +121,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -131,7 +131,7 @@
       true,
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct: definition taken from p274 ('determining which process in the ready state should be moved to the running state'), equivalent to the gold 'choosing which process to run next'; p274 is not in the gold list, so retrieval/context metrics count it as a miss"
   },
@@ -140,7 +140,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -149,7 +149,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -158,7 +158,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -168,7 +168,7 @@
       true,
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 1,
     "reason": "partially correct: says flash has lower latency (supported by p288) but gives no numbers and claims none exist; gold p293:c2 (10 ms vs 100 us) never retrieved by the rewritten queries"
   },
@@ -178,7 +178,7 @@
       true,
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -188,7 +188,7 @@
       true,
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -197,7 +197,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -206,7 +206,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -215,7 +215,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -225,7 +225,7 @@
       true,
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
@@ -235,28 +235,28 @@
       true,
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence"
   },
   {
     "query_id": "ud01",
     "citation_support": [],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "abstention_correct": true,
     "reason": "searched, abstained and named what is missing; no unsupported claim"
   },
   {
     "query_id": "ud02",
     "citation_support": [],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "abstention_correct": true,
     "reason": "searched, abstained and named what is missing; no unsupported claim"
   },
   {
     "query_id": "ud03",
     "citation_support": [],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "abstention_correct": true,
     "reason": "searched, abstained and named what is missing; no unsupported claim"
   }

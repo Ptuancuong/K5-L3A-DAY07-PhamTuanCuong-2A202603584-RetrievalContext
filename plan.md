@@ -4,7 +4,7 @@
 >
 > Việc còn lại của tác giả trước khi nộp:
 >
-> 1. Duyệt nhãn trong `results/agent/*/*/reviews.json`. Đây là nhãn nháp do AI soạn; các override kèm lý do nằm trong `src/labels.py`.
+> 1. ~~Duyệt nhãn trong `results/agent/*/*/reviews.json`~~: đã xong, nhãn chuyển sang `author-reviewed`.
 > 2. Push lên repo cá nhân và cấp quyền xem cho người chấm.
 >
 > Thử thách nâng cao không thực hiện.

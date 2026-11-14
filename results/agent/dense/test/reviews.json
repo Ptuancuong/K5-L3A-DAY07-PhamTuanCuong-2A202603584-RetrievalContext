@@ -4,7 +4,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence",
     "context_grade": 2,
@@ -15,7 +15,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence",
     "context_grade": 2,
@@ -27,7 +27,7 @@
       true,
       false
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "answer correct and supported by p229:c0 (gold); the second sentence ('several technologies are combined in a memory hierarchy') cites only p228:c2, which says no single technology excels but not that they are combined in a hierarchy (that is p229:c0) -> p228:c2 counted as not supporting (strict)",
     "context_grade": 2,
@@ -38,7 +38,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence",
     "context_grade": 2,
@@ -49,7 +49,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence",
     "context_grade": 2,
@@ -60,7 +60,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence",
     "context_grade": 2,
@@ -72,7 +72,7 @@
       true,
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence",
     "context_grade": 2,
@@ -83,7 +83,7 @@
     "citation_support": [
       true
     ],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "answer_grade": 2,
     "reason": "correct and complete; cited chunk(s) contain the gold evidence",
     "context_grade": 2,
@@ -92,21 +92,21 @@
   {
     "query_id": "ut01",
     "citation_support": [],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "abstention_correct": true,
     "reason": "searched, abstained and named what is missing; no unsupported claim"
   },
   {
     "query_id": "ut02",
     "citation_support": [],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "abstention_correct": true,
     "reason": "searched, abstained and named what is missing; no unsupported claim"
   },
   {
     "query_id": "ut03",
     "citation_support": [],
-    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "labeled_by": "author-reviewed (claude-opus-5.5 draft read answers + cited chunks; author reviewed all labels, kept unchanged)",
     "abstention_correct": true,
     "reason": "searched, abstained and named what is missing; no unsupported claim"
   }

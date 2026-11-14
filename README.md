@@ -58,6 +58,8 @@ Nộp code, cách chạy, cấu hình, benchmark, trace và [báo cáo](report/i
 
 ```powershell
 # 1. Day 6 phải chạy sẵn: container pgvector (docker compose -p day6_student_starter up -d) đã ingest index B.
+#    Repo Day 6 (cách dựng lại vector store): https://github.com/Ptuancuong/K5-L3A-DAY06-PhamTuanCuong-2A202603584-DataIngestion
+#    Chunk đã export sẵn ở data/day6/ (BM25 chạy được không cần DB; dense cần DB + model e5).
 #    Có thể dùng lại venv của Day 6, hoặc tạo venv mới:
 py -3.11 -m venv .venv; .venv\Scripts\Activate.ps1
 pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu
