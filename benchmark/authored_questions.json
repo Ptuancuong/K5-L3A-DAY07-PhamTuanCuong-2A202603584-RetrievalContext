@@ -1,0 +1,268 @@
+[
+  {
+    "id": "d22",
+    "split": "dev",
+    "type": "paraphrase_hard",
+    "origin": "day7-new",
+    "question": "What do we call the group of wires that links the CPU, the memory and the graphics card so they can exchange data?",
+    "expected_answer": "A bus (a collection of wires that transfers data between the components).",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 207,
+        "evidence": "connected via a collection of wires referred to as a bus"
+      }
+    ]
+  },
+  {
+    "id": "d23",
+    "split": "dev",
+    "type": "condition",
+    "origin": "day7-new",
+    "question": "In one's complement representation, how can you tell that a binary number is negative?",
+    "expected_answer": "If the most significant bit is 1, the number is negative (it is stored in one's complement form; taking the one's complement again gives the original magnitude).",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 216,
+        "evidence": "Check the most significant bit and if it is 1, the number is negative"
+      }
+    ]
+  },
+  {
+    "id": "d24",
+    "split": "dev",
+    "type": "paraphrase_hard",
+    "origin": "day7-new",
+    "question": "In operating system design, which concept decides what should be done and which concept carries out how it is done?",
+    "expected_answer": "A policy decides what needs to be done; a mechanism is the activity that enforces the policy (how to do it).",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 253,
+        "evidence": "a policy is a way to choose which activities to perform (i.e., what needs to be done) and a mechanism is an activity that enforces policies (i.e., how to do it)"
+      }
+    ]
+  },
+  {
+    "id": "d25",
+    "split": "dev",
+    "type": "paraphrase_hard",
+    "origin": "day7-new",
+    "question": "Which piece of software lets one physical server host several guest operating systems by creating and managing virtual machines?",
+    "expected_answer": "A hypervisor (virtual machine monitor, VMM).",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 253,
+        "evidence": "The hypervisor creates and manages virtual machines."
+      }
+    ]
+  },
+  {
+    "id": "d26",
+    "split": "dev",
+    "type": "paraphrase_hard",
+    "origin": "day7-new",
+    "question": "On a UNIX-like system, where is the mapping from a file's name to its inode kept?",
+    "expected_answer": "In directories, which are special files listing file names and their corresponding inodes (the inode itself does not contain the name).",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 285,
+        "evidence": "The name-toinode mapping is stored in directories"
+      }
+    ]
+  },
+
+  {
+    "id": "ud01",
+    "split": "dev",
+    "type": "unanswerable",
+    "origin": "day7-new",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "question": "What is the maximum file size supported by the FAT32 file system?",
+    "absence_reason": "The corpus only describes FAT as a table mapping file names to clusters (p285); it never mentions FAT32 or any file size limit.",
+    "check_method": "Regex search over all 79 pages of data/pages.jsonl: 'FAT32' 0 hits, 'maximum file size' 0 hits; 'FAT' only on p285 (description of the table)."
+  },
+  {
+    "id": "ud02",
+    "split": "dev",
+    "type": "unanswerable",
+    "origin": "day7-new",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "question": "How many transistors does Intel's Core i9 processor contain?",
+    "absence_reason": "The corpus only says generally that a single processor contains billions of transistors (p213); no specific Intel Core i9 figure exists.",
+    "check_method": "Regex search: 'i9' 0 hits; 'transistor' 34 hits, none tied to a Core i9; 'billion' hits are generic (p204, p210, p213, p230)."
+  },
+  {
+    "id": "ud03",
+    "split": "dev",
+    "type": "unanswerable",
+    "origin": "day7-new",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "question": "Which page replacement algorithm does Windows 11 use?",
+    "absence_reason": "Page replacement is defined generically (p283) but no algorithm per OS and no Windows 11 are mentioned.",
+    "check_method": "Regex search: 'Windows 11' 0 hits; 'least recently'/'LRU' 0 hits; 'replacement' only on p283 (generic definition)."
+  },
+
+  {
+    "id": "t01",
+    "split": "test",
+    "type": "paraphrase",
+    "origin": "day7-new",
+    "question": "What piece of software takes a program written in a high-level language and turns it into assembly language?",
+    "expected_answer": "A compiler.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 210,
+        "evidence": "A compiler is a piece of software that takes a program written in a given HLL and generates another program"
+      }
+    ]
+  },
+  {
+    "id": "t02",
+    "split": "test",
+    "type": "condition",
+    "origin": "day7-new",
+    "question": "Between the CPU and memory, which bus is single directional and which is bidirectional, and why is the latter bidirectional?",
+    "expected_answer": "The address bus is single directional (the CPU always provides the address); the data bus is bidirectional because data can be sent to memory or fetched from memory.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 223,
+        "evidence": "the address bus is single directional. But the data bus is bidirectional because you can send data to memory or get data from memory."
+      }
+    ]
+  },
+  {
+    "id": "t03",
+    "split": "test",
+    "type": "direct",
+    "origin": "day7-new",
+    "question": "What five properties should an ideal memory system have?",
+    "expected_answer": "Fast, dense, persistent, large in capacity, and inexpensive.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 229,
+        "evidence": "This ideal memory system must be fast, dense, persistent, large in capacity, and inexpensive."
+      }
+    ]
+  },
+  {
+    "id": "t04",
+    "split": "test",
+    "type": "paraphrase",
+    "origin": "day7-new",
+    "question": "In UNIX, which two operations split process creation into two steps?",
+    "expected_answer": "fork (creates a complete copy of the process) and exec (brings the executable file into memory to start execution).",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 258,
+        "evidence": "splitting the process into two steps using fork and exec functionalities"
+      }
+    ]
+  },
+  {
+    "id": "t05",
+    "split": "test",
+    "type": "direct",
+    "origin": "day7-new",
+    "question": "At a minimum, what does a process consist of?",
+    "expected_answer": "An address space, a CPU state, and a set of OS resources.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 268,
+        "evidence": "A process consists of at least an address space, a CPU state, and a set of OS resources."
+      }
+    ]
+  },
+  {
+    "id": "t06",
+    "split": "test",
+    "type": "metadata_filter",
+    "origin": "day7-new",
+    "question": "What hardware cache speeds up translating virtual addresses into physical addresses?",
+    "expected_answer": "The translation lookaside buffer (TLB), a memory cache that stores recent virtual-to-physical translations.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 281,
+        "evidence": "A TLB is a memory cache that stores the virtual memory recent transaction to physical memory"
+      }
+    ],
+    "filter": { "chapter": 6 },
+    "filter_context": "User states they are studying Chapter 6 (Operating Systems)."
+  },
+  {
+    "id": "t07",
+    "split": "test",
+    "type": "condition",
+    "origin": "day7-new",
+    "question": "After a website has set the two-factor authentication cookie, when is two-factor authentication required again?",
+    "expected_answer": "Whenever the user logs in from a different browser or a different machine.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 290,
+        "evidence": "Whenever a user needs to log in from a different browser or different machine, two-factor authentication is used again."
+      }
+    ]
+  },
+  {
+    "id": "t08",
+    "split": "test",
+    "type": "direct",
+    "origin": "day7-new",
+    "question": "Which file system operation resets a file's length to zero and releases its allocated space?",
+    "expected_answer": "Truncate.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 286,
+        "evidence": "Truncate: Reset the file length to zero and release the allocated space for the file."
+      }
+    ]
+  },
+
+  {
+    "id": "ut01",
+    "split": "test",
+    "type": "unanswerable",
+    "origin": "day7-new",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "question": "What is the default time quantum used by the Linux Completely Fair Scheduler?",
+    "absence_reason": "Round-robin time slices are explained with a toy example (p274, p278: 2 ms slice), but the Linux Completely Fair Scheduler and its defaults are never mentioned.",
+    "check_method": "Regex search: 'Completely Fair' 0 hits; 'CFS' only inside 'FCFS' (p274); time-slice values only in the illustrative example on p278."
+  },
+  {
+    "id": "ut02",
+    "split": "test",
+    "type": "unanswerable",
+    "origin": "day7-new",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "question": "How much L3 cache does Apple's M2 chip have?",
+    "absence_reason": "L3 cache appears only in the generic cache-level explanation (p235); Apple is mentioned only for macOS; no M2 chip.",
+    "check_method": "Regex search: 'M2' 0 hits; 'L3' 2 hits on p235 (generic); 'Apple' hits only about macOS/kernel (p214, p250, p266)."
+  },
+  {
+    "id": "ut03",
+    "split": "test",
+    "type": "unanswerable",
+    "origin": "day7-new",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "question": "In what year did Microsoft first introduce the NTFS file system?",
+    "absence_reason": "NTFS is described (Master File Table, p285; journaling, p292) but its introduction year is not given.",
+    "check_method": "Regex search: 'NTFS' 4 hits (p285, p292) with no year; '1993' 0 hits."
+  }
+]

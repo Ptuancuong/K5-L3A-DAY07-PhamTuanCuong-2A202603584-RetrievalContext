@@ -1,0 +1,542 @@
+[
+  {
+    "id": "d01",
+    "split": "dev",
+    "type": "paraphrase",
+    "origin": "day6:d01",
+    "question": "What is a single 1 or 0 stored inside a computer called?",
+    "expected_answer": "A binary digit, or bit.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 205,
+        "evidence": "A 1 or a 0 is called a binary digit or bit."
+      }
+    ]
+  },
+  {
+    "id": "d02",
+    "split": "dev",
+    "type": "paraphrase",
+    "origin": "day6:d02",
+    "question": "What term is used for the internal design of the processor?",
+    "expected_answer": "Microarchitecture.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 213,
+        "evidence": "The architecture (i.e., design) of the microprocessor (i.e., the processor) is called microarchitecture"
+      }
+    ]
+  },
+  {
+    "id": "d03",
+    "split": "dev",
+    "type": "condition",
+    "origin": "day6:d03",
+    "question": "In IEEE 754 double precision, what value is subtracted from the exponent?",
+    "expected_answer": "1023 (for single precision it is 127).",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 220,
+        "evidence": "For double precision that takes 64 bits, we subtract 1023"
+      }
+    ]
+  },
+  {
+    "id": "d04",
+    "split": "dev",
+    "type": "condition",
+    "origin": "day6:d04",
+    "question": "In the IEEE 754 format, what does it mean when the exponent is all 1s but the fraction is not zero?",
+    "expected_answer": "It is NaN (Not a Number) and raises an exception.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 220,
+        "evidence": "If the exponent is all 1s and the fraction is non-zero, this is called NaN (Not a Number) and raises an exception."
+      }
+    ]
+  },
+  {
+    "id": "d05",
+    "split": "dev",
+    "type": "direct",
+    "origin": "day6:d05",
+    "question": "When is the zero flag set to 1 in x86?",
+    "expected_answer": "When the previous instruction has generated 0 as a result.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 226,
+        "evidence": "One of the flags is called the zero flag, and it is set to 1 if the previous instruction has generated 0 as a result."
+      }
+    ]
+  },
+  {
+    "id": "d06",
+    "split": "dev",
+    "type": "paraphrase",
+    "origin": "day6:d06",
+    "question": "What is it called when the processor looks for data in the cache and the cache does not have it?",
+    "expected_answer": "A cache miss.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 232,
+        "evidence": "Initially the cache is empty, so it does not have the needed data which is called a cache miss."
+      }
+    ]
+  },
+  {
+    "id": "d07",
+    "split": "dev",
+    "type": "direct",
+    "origin": "day6:d07",
+    "question": "How fast are sequential reads and writes on an SSD?",
+    "expected_answer": "Sequential read reaches 7000 MB/s and sequential write reaches 5000 MB/s.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 234,
+        "evidence": "The sequential read from SSD reaches 7000 MB/s and the sequential write reaches 5000 MB/s."
+      }
+    ]
+  },
+  {
+    "id": "d08",
+    "split": "dev",
+    "type": "direct",
+    "origin": "day6:d08",
+    "question": "What is the bootstrap code?",
+    "expected_answer": "A privileged system program; the first code executed when the OS starts.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 262,
+        "evidence": "An example of a privileged system program is the bootstrap code, which is the first code that is executed when the OS starts."
+      }
+    ]
+  },
+  {
+    "id": "d09",
+    "split": "dev",
+    "type": "direct",
+    "origin": "day6:d09",
+    "question": "What was the first example of a layered operating system design and when was it designed?",
+    "expected_answer": "Dijkstra's THE system, designed in 1968.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 264,
+        "evidence": "The first example of a layered approach was Dijkstra’s THE system, which was designed in 1968."
+      }
+    ]
+  },
+  {
+    "id": "d10",
+    "split": "dev",
+    "type": "paraphrase",
+    "origin": "day6:d10",
+    "question": "What is the name for moving the CPU from running one process to running another?",
+    "expected_answer": "A context switch.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 273,
+        "evidence": "The act of switching the CPU from one process to another is called a context switch."
+      }
+    ]
+  },
+  {
+    "id": "d11",
+    "split": "dev",
+    "type": "paraphrase",
+    "origin": "day6:d11",
+    "question": "What problem occurs when memory blocks are too small to be given to processes and stay unused?",
+    "expected_answer": "Fragmentation.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 279,
+        "evidence": "When the memory blocks cannot be allocated to the processes due to their small size and the blocks remain unused, this problem is called fragmentation."
+      }
+    ]
+  },
+  {
+    "id": "d12",
+    "split": "dev",
+    "type": "condition",
+    "origin": "day6:d12",
+    "question": "What happens when the CPU requests a page that is not in main memory?",
+    "expected_answer": "A page fault occurs.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 283,
+        "evidence": "When the CPU demands a page and this page is not present in the main memory, we call this situation a page fault."
+      }
+    ]
+  },
+  {
+    "id": "d13",
+    "split": "dev",
+    "type": "direct",
+    "origin": "day6:d13",
+    "question": "Which encoding was approved in 1963 and later revised several times, and in which years was it revised?",
+    "expected_answer": "ASCII; approved in 1963 and revised in 1965, 1967, 1968, 1977 and 1986.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 218,
+        "evidence": "This code was approved in 1963, before personal computers existed, and then revised in 1965, 1967, 1968, 1977, and 1986."
+      }
+    ]
+  },
+  {
+    "id": "d14",
+    "split": "dev",
+    "type": "metadata_filter",
+    "origin": "day6:d14",
+    "question": "What technique does the operating system use to keep programs from overwriting each other's data, and what is it called?",
+    "expected_answer": "Virtual memory: the OS isolates programs so they do not overwrite each other's data or corrupt each other's files.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 214,
+        "evidence": "The technique that the OS uses to isolate different programs from each other so that they do not overwrite each other’s data or corrupt each other’s files is called virtual memory."
+      }
+    ],
+    "filter": {
+      "chapter": 5
+    },
+    "filter_context": "Assumed user context supplied before retrieval: the student is studying Chapter 5 (Computer Systems Design)."
+  },
+  {
+    "id": "d15",
+    "split": "dev",
+    "type": "metadata_filter",
+    "origin": "day6:d15",
+    "question": "What does scheduling mean?",
+    "expected_answer": "Choosing which process to run next (removing the running process from the CPU and selecting another one according to a strategy).",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 272,
+        "evidence": "Choosing which process to run next is called scheduling."
+      },
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 272,
+        "evidence": "The activity of handling the removal of the running process from the CPU and the selection of another process based on a particular strategy is called scheduling."
+      }
+    ],
+    "filter": {
+      "chapter": 6
+    },
+    "filter_context": "Assumed user context supplied before retrieval: the student is studying Chapter 6 (Operating Systems)."
+  },
+  {
+    "id": "d16",
+    "split": "dev",
+    "type": "direct",
+    "origin": "day6:t01",
+    "question": "According to Moore's law, how often would the number of devices inside the processor double?",
+    "expected_answer": "Every 18 months (Gordon Moore's 1965 prediction).",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 236,
+        "evidence": "predicted that the number of devices inside the processor would double every 18 months, called Moore’s law"
+      }
+    ]
+  },
+  {
+    "id": "d17",
+    "split": "dev",
+    "type": "paraphrase",
+    "origin": "day6:t02",
+    "question": "What is Intel's name for simultaneous multithreading?",
+    "expected_answer": "Hyperthreading technology.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 238,
+        "evidence": "This is called simultaneous multithreading (SMT), which Intel calls hyperthreading technology."
+      }
+    ]
+  },
+  {
+    "id": "d18",
+    "split": "dev",
+    "type": "direct",
+    "origin": "day6:t03",
+    "question": "What does a journaling file system do?",
+    "expected_answer": "It records the changes in a separate log file, sometimes called a journal file.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 292,
+        "evidence": "This term is known as journaling file system and refers to the practice of recording the changes in the information in a separate log file sometimes called a journal file."
+      }
+    ]
+  },
+  {
+    "id": "d19",
+    "split": "dev",
+    "type": "condition",
+    "origin": "day6:t04",
+    "question": "How does the storage access latency of disks compare with that of flash memory?",
+    "expected_answer": "About 10 ms for disks versus about 100 µs for flash memory.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 293,
+        "evidence": "storage access latency for disks is around 10 ms, and it is around 100 µs for flash memory"
+      }
+    ]
+  },
+  {
+    "id": "d20",
+    "split": "dev",
+    "type": "metadata_filter",
+    "origin": "day6:t05",
+    "question": "Why are SSDs faster and more durable than hard disk drives?",
+    "expected_answer": "SSDs have no moving/mechanical parts (unlike HDDs with rotating disks and read/write heads), which increases durability and makes reads and writes much faster.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 288,
+        "evidence": "No moving parts: Unlike HDDs that use rotating disks and read/write heads, SSDs have no mechanical parts. This not only increases durability, but also means that data can be read from and written to the drive much faster."
+      }
+    ],
+    "filter": {
+      "chapter": 6
+    },
+    "filter_context": "Assumed user context supplied before retrieval: the student is studying Chapter 6 (Operating Systems)."
+  },
+  {
+    "id": "d21",
+    "split": "dev",
+    "type": "metadata_filter",
+    "origin": "day6:t06",
+    "question": "What is a thread?",
+    "expected_answer": "A path of execution within a process (a basic unit of execution); a process may contain multiple threads that share its resources.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 254,
+        "evidence": "a thread is a path of execution within a process, and a process may contain multiple threads"
+      },
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 271,
+        "evidence": "Each thread is a basic unit of execution that executes a set of instructions in a specific order."
+      }
+    ],
+    "filter": {
+      "chapter": 6
+    },
+    "filter_context": "Assumed user context supplied before retrieval: the student is studying Chapter 6 (Operating Systems)."
+  },
+  {
+    "id": "d22",
+    "split": "dev",
+    "type": "paraphrase_hard",
+    "origin": "day7-new",
+    "question": "What do we call the group of wires that links the CPU, the memory and the graphics card so they can exchange data?",
+    "expected_answer": "A bus (a collection of wires that transfers data between the components).",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 207,
+        "evidence": "connected via a collection of wires referred to as a bus"
+      }
+    ]
+  },
+  {
+    "id": "d23",
+    "split": "dev",
+    "type": "condition",
+    "origin": "day7-new",
+    "question": "In one's complement representation, how can you tell that a binary number is negative?",
+    "expected_answer": "If the most significant bit is 1, the number is negative (it is stored in one's complement form; taking the one's complement again gives the original magnitude).",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 216,
+        "evidence": "Check the most significant bit and if it is 1, the number is negative"
+      }
+    ]
+  },
+  {
+    "id": "d24",
+    "split": "dev",
+    "type": "paraphrase_hard",
+    "origin": "day7-new",
+    "question": "In operating system design, which concept decides what should be done and which concept carries out how it is done?",
+    "expected_answer": "A policy decides what needs to be done; a mechanism is the activity that enforces the policy (how to do it).",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 253,
+        "evidence": "a policy is a way to choose which activities to perform (i.e., what needs to be done) and a mechanism is an activity that enforces policies (i.e., how to do it)"
+      }
+    ]
+  },
+  {
+    "id": "d25",
+    "split": "dev",
+    "type": "paraphrase_hard",
+    "origin": "day7-new",
+    "question": "Which piece of software lets one physical server host several guest operating systems by creating and managing virtual machines?",
+    "expected_answer": "A hypervisor (virtual machine monitor, VMM).",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 253,
+        "evidence": "The hypervisor creates and manages virtual machines."
+      }
+    ]
+  },
+  {
+    "id": "d26",
+    "split": "dev",
+    "type": "paraphrase_hard",
+    "origin": "day7-new",
+    "question": "On a UNIX-like system, where is the mapping from a file's name to its inode kept?",
+    "expected_answer": "In directories, which are special files listing file names and their corresponding inodes (the inode itself does not contain the name).",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 285,
+        "evidence": "The name-toinode mapping is stored in directories"
+      }
+    ]
+  },
+  {
+    "id": "t01",
+    "split": "test",
+    "type": "paraphrase",
+    "origin": "day7-new",
+    "question": "What piece of software takes a program written in a high-level language and turns it into assembly language?",
+    "expected_answer": "A compiler.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 210,
+        "evidence": "A compiler is a piece of software that takes a program written in a given HLL and generates another program"
+      }
+    ]
+  },
+  {
+    "id": "t02",
+    "split": "test",
+    "type": "condition",
+    "origin": "day7-new",
+    "question": "Between the CPU and memory, which bus is single directional and which is bidirectional, and why is the latter bidirectional?",
+    "expected_answer": "The address bus is single directional (the CPU always provides the address); the data bus is bidirectional because data can be sent to memory or fetched from memory.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 223,
+        "evidence": "the address bus is single directional. But the data bus is bidirectional because you can send data to memory or get data from memory."
+      }
+    ]
+  },
+  {
+    "id": "t03",
+    "split": "test",
+    "type": "direct",
+    "origin": "day7-new",
+    "question": "What five properties should an ideal memory system have?",
+    "expected_answer": "Fast, dense, persistent, large in capacity, and inexpensive.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 229,
+        "evidence": "This ideal memory system must be fast, dense, persistent, large in capacity, and inexpensive."
+      }
+    ]
+  },
+  {
+    "id": "t04",
+    "split": "test",
+    "type": "paraphrase",
+    "origin": "day7-new",
+    "question": "In UNIX, which two operations split process creation into two steps?",
+    "expected_answer": "fork (creates a complete copy of the process) and exec (brings the executable file into memory to start execution).",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 258,
+        "evidence": "splitting the process into two steps using fork and exec functionalities"
+      }
+    ]
+  },
+  {
+    "id": "t05",
+    "split": "test",
+    "type": "direct",
+    "origin": "day7-new",
+    "question": "At a minimum, what does a process consist of?",
+    "expected_answer": "An address space, a CPU state, and a set of OS resources.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 268,
+        "evidence": "A process consists of at least an address space, a CPU state, and a set of OS resources."
+      }
+    ]
+  },
+  {
+    "id": "t06",
+    "split": "test",
+    "type": "metadata_filter",
+    "origin": "day7-new",
+    "question": "What hardware cache speeds up translating virtual addresses into physical addresses?",
+    "expected_answer": "The translation lookaside buffer (TLB), a memory cache that stores recent virtual-to-physical translations.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 281,
+        "evidence": "A TLB is a memory cache that stores the virtual memory recent transaction to physical memory"
+      }
+    ],
+    "filter": {
+      "chapter": 6
+    },
+    "filter_context": "User states they are studying Chapter 6 (Operating Systems)."
+  },
+  {
+    "id": "t07",
+    "split": "test",
+    "type": "condition",
+    "origin": "day7-new",
+    "question": "After a website has set the two-factor authentication cookie, when is two-factor authentication required again?",
+    "expected_answer": "Whenever the user logs in from a different browser or a different machine.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 290,
+        "evidence": "Whenever a user needs to log in from a different browser or different machine, two-factor authentication is used again."
+      }
+    ]
+  },
+  {
+    "id": "t08",
+    "split": "test",
+    "type": "direct",
+    "origin": "day7-new",
+    "question": "Which file system operation resets a file's length to zero and releases its allocated space?",
+    "expected_answer": "Truncate.",
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 286,
+        "evidence": "Truncate: Reset the file length to zero and release the allocated space for the file."
+      }
+    ]
+  }
+]

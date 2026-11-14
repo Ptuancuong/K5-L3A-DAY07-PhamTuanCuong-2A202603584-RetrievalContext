@@ -1,0 +1,68 @@
+[
+  {
+    "id": "ud01",
+    "split": "dev",
+    "type": "unanswerable",
+    "origin": "day7-new",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "question": "What is the maximum file size supported by the FAT32 file system?",
+    "absence_reason": "The corpus only describes FAT as a table mapping file names to clusters (p285); it never mentions FAT32 or any file size limit.",
+    "check_method": "Regex search over all 79 pages of data/pages.jsonl: 'FAT32' 0 hits, 'maximum file size' 0 hits; 'FAT' only on p285 (description of the table)."
+  },
+  {
+    "id": "ud02",
+    "split": "dev",
+    "type": "unanswerable",
+    "origin": "day7-new",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "question": "How many transistors does Intel's Core i9 processor contain?",
+    "absence_reason": "The corpus only says generally that a single processor contains billions of transistors (p213); no specific Intel Core i9 figure exists.",
+    "check_method": "Regex search: 'i9' 0 hits; 'transistor' 34 hits, none tied to a Core i9; 'billion' hits are generic (p204, p210, p213, p230)."
+  },
+  {
+    "id": "ud03",
+    "split": "dev",
+    "type": "unanswerable",
+    "origin": "day7-new",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "question": "Which page replacement algorithm does Windows 11 use?",
+    "absence_reason": "Page replacement is defined generically (p283) but no algorithm per OS and no Windows 11 are mentioned.",
+    "check_method": "Regex search: 'Windows 11' 0 hits; 'least recently'/'LRU' 0 hits; 'replacement' only on p283 (generic definition)."
+  },
+  {
+    "id": "ut01",
+    "split": "test",
+    "type": "unanswerable",
+    "origin": "day7-new",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "question": "What is the default time quantum used by the Linux Completely Fair Scheduler?",
+    "absence_reason": "Round-robin time slices are explained with a toy example (p274, p278: 2 ms slice), but the Linux Completely Fair Scheduler and its defaults are never mentioned.",
+    "check_method": "Regex search: 'Completely Fair' 0 hits; 'CFS' only inside 'FCFS' (p274); time-slice values only in the illustrative example on p278."
+  },
+  {
+    "id": "ut02",
+    "split": "test",
+    "type": "unanswerable",
+    "origin": "day7-new",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "question": "How much L3 cache does Apple's M2 chip have?",
+    "absence_reason": "L3 cache appears only in the generic cache-level explanation (p235); Apple is mentioned only for macOS; no M2 chip.",
+    "check_method": "Regex search: 'M2' 0 hits; 'L3' 2 hits on p235 (generic); 'Apple' hits only about macOS/kernel (p214, p250, p266)."
+  },
+  {
+    "id": "ut03",
+    "split": "test",
+    "type": "unanswerable",
+    "origin": "day7-new",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "question": "In what year did Microsoft first introduce the NTFS file system?",
+    "absence_reason": "NTFS is described (Master File Table, p285; journaling, p292) but its introduction year is not given.",
+    "check_method": "Regex search: 'NTFS' 4 hits (p285, p292) with no year; '1993' 0 hits."
+  }
+]
