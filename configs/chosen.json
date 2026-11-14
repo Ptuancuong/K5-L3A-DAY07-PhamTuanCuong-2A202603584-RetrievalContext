@@ -1,0 +1,26 @@
+{
+  "name": "chosen",
+  "description": "Hybrid RRF (dense + BM25) + improvements A and B.",
+  "retrieval": {
+    "method": "hybrid",
+    "index": "B",
+    "depth": 20,
+    "rrf_k": 60
+  },
+  "top_k": 3,
+  "use_filter": true,
+  "context": {
+    "budget": 6400,
+    "mode": "truncate"
+  },
+  "agent": {
+    "max_searches": 3,
+    "first_search": "original_question"
+  },
+  "chosen_from": "hybrid_combo",
+  "selection_log": [
+    "1. constraints pass: ['dense', 'bm25', 'hybrid', 'hybrid_rerank', 'dense_origfirst', 'dense_ctx6400', 'dense_combo', 'hybrid_combo', 'hybrid_rerank_combo']",
+    "2-3. best grounded sum 52, best context hits 26; within 1 question on both: ['hybrid', 'hybrid_rerank', 'dense_ctx6400', 'dense_combo', 'hybrid_combo', 'hybrid_rerank_combo']",
+    "5. tie-break by median latency, cost, simplicity: hybrid_combo (1620.8 ms, 0.01105 USD), dense_combo (1652.3 ms, 0.01145 USD), hybrid_rerank_combo (2349.9 ms, 0.01085 USD), dense_ctx6400 (2667.5 ms, 0.01563 USD), hybrid (2674.5 ms, 0.01473 USD), hybrid_rerank (3207.1 ms, 0.01471 USD)"
+  ]
+}

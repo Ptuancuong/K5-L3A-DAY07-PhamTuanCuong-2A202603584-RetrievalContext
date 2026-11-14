@@ -1,0 +1,1 @@
+{"name": "dense", "description": "Baseline: dense retrieval on the Day 6 pgvector index B (e5-small, exact cosine), user-supplied chapter filter, top-3, 3200-char context, up to 3 searches.", "retrieval": {"method": "dense", "index": "B"}, "top_k": 3, "use_filter": true, "context": {"budget": 3200, "mode": "skip"}, "agent": {"max_searches": 3}}

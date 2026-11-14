@@ -1,0 +1,3858 @@
+[
+  {
+    "query_id": "d01",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "What is a single 1 or 0 stored inside a computer called?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p205:c1",
+        "page": 205,
+        "rank": 1,
+        "score": 7.0886,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p205:c4",
+        "page": 205,
+        "rank": 2,
+        "score": 4.28546,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 8,
+          "bm25": 5
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p206:c1",
+        "page": 206,
+        "rank": 3,
+        "score": 3.47009,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 4
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p205:c2",
+        "page": 205,
+        "rank": 4,
+        "score": 1.66909,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7,
+          "bm25": 2
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p218:c1",
+        "page": 218,
+        "rank": 5,
+        "score": 1.02624,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 12,
+          "bm25": 6
+        },
+        "base_rank": 6
+      },
+      {
+        "id": "B:openstax-intro-cs:p230:c1",
+        "page": 230,
+        "rank": 6,
+        "score": 0.3469,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2
+        },
+        "base_rank": 9
+      },
+      {
+        "id": "B:openstax-intro-cs:p214:c3",
+        "page": 214,
+        "rank": 7,
+        "score": -0.61059,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 6,
+          "bm25": 17
+        },
+        "base_rank": 7
+      },
+      {
+        "id": "B:openstax-intro-cs:p220:c4",
+        "page": 220,
+        "rank": 8,
+        "score": -1.43237,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 9,
+          "bm25": 19
+        },
+        "base_rank": 8
+      },
+      {
+        "id": "B:openstax-intro-cs:p207:c1",
+        "page": 207,
+        "rank": 9,
+        "score": -1.86042,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5
+        },
+        "base_rank": 11
+      },
+      {
+        "id": "B:openstax-intro-cs:p220:c3",
+        "page": 220,
+        "rank": 10,
+        "score": -2.85564,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 15,
+          "bm25": 3
+        },
+        "base_rank": 5
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p205:c1",
+      "B:openstax-intro-cs:p205:c4",
+      "B:openstax-intro-cs:p206:c1"
+    ],
+    "context_chars": 2827,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 552.8,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 205,
+        "evidence": "A 1 or a 0 is called a binary digit or bit."
+      }
+    ]
+  },
+  {
+    "query_id": "d02",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "What term is used for the internal design of the processor?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p213:c0",
+        "page": 213,
+        "rank": 1,
+        "score": 2.28649,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 3
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p208:c1",
+        "page": 208,
+        "rank": 2,
+        "score": 0.14388,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 11
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p213:c1",
+        "page": 213,
+        "rank": 3,
+        "score": -0.8942,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 10,
+          "bm25": 12
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p231:c1",
+        "page": 231,
+        "rank": 4,
+        "score": -2.40901,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 1
+        },
+        "base_rank": 9
+      },
+      {
+        "id": "B:openstax-intro-cs:p259:c1",
+        "page": 259,
+        "rank": 5,
+        "score": -3.06959,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 12,
+          "bm25": 17
+        },
+        "base_rank": 7
+      },
+      {
+        "id": "B:openstax-intro-cs:p236:c2",
+        "page": 236,
+        "rank": 6,
+        "score": -3.39119,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 9,
+          "bm25": 5
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p237:c0",
+        "page": 237,
+        "rank": 7,
+        "score": -3.39693,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 8
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p263:c0",
+        "page": 263,
+        "rank": 8,
+        "score": -3.82651,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 15,
+          "bm25": 13
+        },
+        "base_rank": 6
+      },
+      {
+        "id": "B:openstax-intro-cs:p236:c0",
+        "page": 236,
+        "rank": 9,
+        "score": -3.90364,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 9
+        },
+        "base_rank": 19
+      },
+      {
+        "id": "B:openstax-intro-cs:p236:c1",
+        "page": 236,
+        "rank": 10,
+        "score": -3.95863,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 13,
+          "bm25": 16
+        },
+        "base_rank": 8
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p213:c0",
+      "B:openstax-intro-cs:p208:c1",
+      "B:openstax-intro-cs:p213:c1"
+    ],
+    "context_chars": 2598,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 488.7,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 213,
+        "evidence": "The architecture (i.e., design) of the microprocessor (i.e., the processor) is called microarchitecture"
+      }
+    ]
+  },
+  {
+    "query_id": "d03",
+    "split": "dev",
+    "type": "condition",
+    "question": "In IEEE 754 double precision, what value is subtracted from the exponent?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p220:c2",
+        "page": 220,
+        "rank": 1,
+        "score": 7.07676,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 2
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p220:c3",
+        "page": 220,
+        "rank": 2,
+        "score": 5.30178,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 1
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p219:c4",
+        "page": 219,
+        "rank": 3,
+        "score": 0.81343,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 6,
+          "bm25": 3
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p220:c1",
+        "page": 220,
+        "rank": 4,
+        "score": -2.07218,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 6
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p220:c0",
+        "page": 220,
+        "rank": 5,
+        "score": -2.62636,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 4
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p220:c4",
+        "page": 220,
+        "rank": 6,
+        "score": -3.45806,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5,
+          "bm25": 5
+        },
+        "base_rank": 6
+      },
+      {
+        "id": "B:openstax-intro-cs:p219:c0",
+        "page": 219,
+        "rank": 7,
+        "score": -6.62018,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 15,
+          "bm25": 16
+        },
+        "base_rank": 11
+      },
+      {
+        "id": "B:openstax-intro-cs:p226:c2",
+        "page": 226,
+        "rank": 8,
+        "score": -7.351,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 12,
+          "bm25": 17
+        },
+        "base_rank": 10
+      },
+      {
+        "id": "B:openstax-intro-cs:p217:c3",
+        "page": 217,
+        "rank": 9,
+        "score": -7.57674,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 11
+        },
+        "base_rank": 18
+      },
+      {
+        "id": "B:openstax-intro-cs:p219:c2",
+        "page": 219,
+        "rank": 10,
+        "score": -8.20908,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 9,
+          "bm25": 7
+        },
+        "base_rank": 7
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p220:c2",
+      "B:openstax-intro-cs:p220:c3",
+      "B:openstax-intro-cs:p219:c4"
+    ],
+    "context_chars": 2599,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 562.9,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 220,
+        "evidence": "For double precision that takes 64 bits, we subtract 1023"
+      }
+    ]
+  },
+  {
+    "query_id": "d04",
+    "split": "dev",
+    "type": "condition",
+    "question": "In the IEEE 754 format, what does it mean when the exponent is all 1s but the fraction is not zero?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p220:c4",
+        "page": 220,
+        "rank": 1,
+        "score": 6.66132,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 2
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p220:c3",
+        "page": 220,
+        "rank": 2,
+        "score": 6.04589,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p220:c2",
+        "page": 220,
+        "rank": 3,
+        "score": 4.33386,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 4
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p219:c4",
+        "page": 219,
+        "rank": 4,
+        "score": 3.00104,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 3
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p220:c0",
+        "page": 220,
+        "rank": 5,
+        "score": -0.51187,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 9,
+          "bm25": 6
+        },
+        "base_rank": 7
+      },
+      {
+        "id": "B:openstax-intro-cs:p220:c1",
+        "page": 220,
+        "rank": 6,
+        "score": -1.74427,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5,
+          "bm25": 5
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p219:c3",
+        "page": 219,
+        "rank": 7,
+        "score": -3.0356,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7,
+          "bm25": 7
+        },
+        "base_rank": 6
+      },
+      {
+        "id": "B:openstax-intro-cs:p219:c0",
+        "page": 219,
+        "rank": 8,
+        "score": -5.08222,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 6
+        },
+        "base_rank": 11
+      },
+      {
+        "id": "B:openstax-intro-cs:p217:c1",
+        "page": 217,
+        "rank": 9,
+        "score": -6.02893,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 8
+        },
+        "base_rank": 13
+      },
+      {
+        "id": "B:openstax-intro-cs:p205:c4",
+        "page": 205,
+        "rank": 10,
+        "score": -6.2328,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 13
+        },
+        "base_rank": 20
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p220:c4",
+      "B:openstax-intro-cs:p220:c3",
+      "B:openstax-intro-cs:p220:c2"
+    ],
+    "context_chars": 2345,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 589.5,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 220,
+        "evidence": "If the exponent is all 1s and the fraction is non-zero, this is called NaN (Not a Number) and raises an exception."
+      }
+    ]
+  },
+  {
+    "query_id": "d05",
+    "split": "dev",
+    "type": "direct",
+    "question": "When is the zero flag set to 1 in x86?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p226:c4",
+        "page": 226,
+        "rank": 1,
+        "score": 3.12101,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p224:c0",
+        "page": 224,
+        "rank": 2,
+        "score": -3.08798,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 2
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p262:c1",
+        "page": 262,
+        "rank": 3,
+        "score": -4.81089,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 6,
+          "bm25": 9
+        },
+        "base_rank": 6
+      },
+      {
+        "id": "B:openstax-intro-cs:p224:c1",
+        "page": 224,
+        "rank": 4,
+        "score": -7.39538,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 19,
+          "bm25": 10
+        },
+        "base_rank": 10
+      },
+      {
+        "id": "B:openstax-intro-cs:p227:c1",
+        "page": 227,
+        "rank": 5,
+        "score": -7.55086,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5,
+          "bm25": 8
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p220:c3",
+        "page": 220,
+        "rank": 6,
+        "score": -8.30673,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 5
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p226:c2",
+        "page": 226,
+        "rank": 7,
+        "score": -8.56962,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 10
+        },
+        "base_rank": 15
+      },
+      {
+        "id": "B:openstax-intro-cs:p220:c4",
+        "page": 220,
+        "rank": 8,
+        "score": -8.67008,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 7
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p221:c4",
+        "page": 221,
+        "rank": 9,
+        "score": -9.03996,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 6
+        },
+        "base_rank": 12
+      },
+      {
+        "id": "B:openstax-intro-cs:p227:c0",
+        "page": 227,
+        "rank": 10,
+        "score": -9.26057,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 14
+        },
+        "base_rank": 19
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p226:c4",
+      "B:openstax-intro-cs:p224:c0",
+      "B:openstax-intro-cs:p262:c1"
+    ],
+    "context_chars": 2022,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 513.5,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 226,
+        "evidence": "One of the flags is called the zero flag, and it is set to 1 if the previous instruction has generated 0 as a result."
+      }
+    ]
+  },
+  {
+    "query_id": "d06",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "What is it called when the processor looks for data in the cache and the cache does not have it?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p232:c3",
+        "page": 232,
+        "rank": 1,
+        "score": 7.41058,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p235:c0",
+        "page": 235,
+        "rank": 2,
+        "score": 3.35546,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 18,
+          "bm25": 2
+        },
+        "base_rank": 9
+      },
+      {
+        "id": "B:openstax-intro-cs:p232:c2",
+        "page": 232,
+        "rank": 3,
+        "score": 2.21345,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7,
+          "bm25": 3
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p232:c4",
+        "page": 232,
+        "rank": 4,
+        "score": 0.68435,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 6
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p234:c3",
+        "page": 234,
+        "rank": 5,
+        "score": -0.06396,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 13,
+          "bm25": 5
+        },
+        "base_rank": 8
+      },
+      {
+        "id": "B:openstax-intro-cs:p234:c2",
+        "page": 234,
+        "rank": 6,
+        "score": -0.60213,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 9,
+          "bm25": 4
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p229:c1",
+        "page": 229,
+        "rank": 7,
+        "score": -0.80967,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 8
+        },
+        "base_rank": 12
+      },
+      {
+        "id": "B:openstax-intro-cs:p259:c1",
+        "page": 259,
+        "rank": 8,
+        "score": -1.01761,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 7
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p206:c2",
+        "page": 206,
+        "rank": 9,
+        "score": -2.00255,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5,
+          "bm25": 10
+        },
+        "base_rank": 7
+      },
+      {
+        "id": "B:openstax-intro-cs:p233:c0",
+        "page": 233,
+        "rank": 10,
+        "score": -2.66293,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 9
+        },
+        "base_rank": 14
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p232:c3",
+      "B:openstax-intro-cs:p235:c0",
+      "B:openstax-intro-cs:p232:c2"
+    ],
+    "context_chars": 2805,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 525.4,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 232,
+        "evidence": "Initially the cache is empty, so it does not have the needed data which is called a cache miss."
+      }
+    ]
+  },
+  {
+    "query_id": "d07",
+    "split": "dev",
+    "type": "direct",
+    "question": "How fast are sequential reads and writes on an SSD?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p234:c1",
+        "page": 234,
+        "rank": 1,
+        "score": 6.36784,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p288:c3",
+        "page": 288,
+        "rank": 2,
+        "score": 1.98684,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2
+        },
+        "base_rank": 7
+      },
+      {
+        "id": "B:openstax-intro-cs:p288:c4",
+        "page": 288,
+        "rank": 3,
+        "score": -1.12995,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3
+        },
+        "base_rank": 9
+      },
+      {
+        "id": "B:openstax-intro-cs:p233:c3",
+        "page": 233,
+        "rank": 4,
+        "score": -2.06533,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 17,
+          "bm25": 2
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p234:c0",
+        "page": 234,
+        "rank": 5,
+        "score": -4.66091,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4
+        },
+        "base_rank": 10
+      },
+      {
+        "id": "B:openstax-intro-cs:p293:c2",
+        "page": 293,
+        "rank": 6,
+        "score": -5.59363,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5
+        },
+        "base_rank": 12
+      },
+      {
+        "id": "B:openstax-intro-cs:p293:c1",
+        "page": 293,
+        "rank": 7,
+        "score": -6.30327,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 8,
+          "bm25": 5
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p261:c3",
+        "page": 261,
+        "rank": 8,
+        "score": -7.86257,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 18,
+          "bm25": 7
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p261:c2",
+        "page": 261,
+        "rank": 9,
+        "score": -9.0062,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 4
+        },
+        "base_rank": 11
+      },
+      {
+        "id": "B:openstax-intro-cs:p235:c1",
+        "page": 235,
+        "rank": 10,
+        "score": -9.83926,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 10,
+          "bm25": 19
+        },
+        "base_rank": 6
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p234:c1",
+      "B:openstax-intro-cs:p288:c3",
+      "B:openstax-intro-cs:p288:c4"
+    ],
+    "context_chars": 2435,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 466.7,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 234,
+        "evidence": "The sequential read from SSD reaches 7000 MB/s and the sequential write reaches 5000 MB/s."
+      }
+    ]
+  },
+  {
+    "query_id": "d08",
+    "split": "dev",
+    "type": "direct",
+    "question": "What is the bootstrap code?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p262:c2",
+        "page": 262,
+        "rank": 1,
+        "score": 3.54629,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p218:c2",
+        "page": 218,
+        "rank": 2,
+        "score": -8.365,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 3
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p223:c0",
+        "page": 223,
+        "rank": 3,
+        "score": -8.41776,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 2
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p223:c1",
+        "page": 223,
+        "rank": 4,
+        "score": -10.10516,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7,
+          "bm25": 4
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p210:c1",
+        "page": 210,
+        "rank": 5,
+        "score": -10.44505,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 6
+        },
+        "base_rank": 10
+      },
+      {
+        "id": "B:openstax-intro-cs:p280:c0",
+        "page": 280,
+        "rank": 6,
+        "score": -10.59359,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 7
+        },
+        "base_rank": 12
+      },
+      {
+        "id": "B:openstax-intro-cs:p286:c3",
+        "page": 286,
+        "rank": 7,
+        "score": -10.62453,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4
+        },
+        "base_rank": 7
+      },
+      {
+        "id": "B:openstax-intro-cs:p291:c4",
+        "page": 291,
+        "rank": 8,
+        "score": -10.68607,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 8
+        },
+        "base_rank": 14
+      },
+      {
+        "id": "B:openstax-intro-cs:p292:c0",
+        "page": 292,
+        "rank": 9,
+        "score": -10.72106,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 14,
+          "bm25": 11
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p279:c3",
+        "page": 279,
+        "rank": 10,
+        "score": -10.79274,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 6
+        },
+        "base_rank": 11
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p262:c2",
+      "B:openstax-intro-cs:p218:c2",
+      "B:openstax-intro-cs:p223:c0"
+    ],
+    "context_chars": 2688,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 453.8,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 262,
+        "evidence": "An example of a privileged system program is the bootstrap code, which is the first code that is executed when the OS starts."
+      }
+    ]
+  },
+  {
+    "query_id": "d09",
+    "split": "dev",
+    "type": "direct",
+    "question": "What was the first example of a layered operating system design and when was it designed?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p264:c0",
+        "page": 264,
+        "rank": 1,
+        "score": 7.80851,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p264:c1",
+        "page": 264,
+        "rank": 2,
+        "score": 1.14812,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 16
+        },
+        "base_rank": 6
+      },
+      {
+        "id": "B:openstax-intro-cs:p263:c3",
+        "page": 263,
+        "rank": 3,
+        "score": 0.70128,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 2
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p263:c0",
+        "page": 263,
+        "rank": 4,
+        "score": -0.06012,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 3
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p263:c1",
+        "page": 263,
+        "rank": 5,
+        "score": -2.66181,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 6,
+          "bm25": 7
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p257:c0",
+        "page": 257,
+        "rank": 6,
+        "score": -5.39099,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7,
+          "bm25": 4
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p209:c0",
+        "page": 209,
+        "rank": 7,
+        "score": -6.26654,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 10
+        },
+        "base_rank": 16
+      },
+      {
+        "id": "B:openstax-intro-cs:p236:c2",
+        "page": 236,
+        "rank": 8,
+        "score": -6.62769,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 9,
+          "bm25": 11
+        },
+        "base_rank": 7
+      },
+      {
+        "id": "B:openstax-intro-cs:p253:c5",
+        "page": 253,
+        "rank": 9,
+        "score": -6.78862,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5
+        },
+        "base_rank": 9
+      },
+      {
+        "id": "B:openstax-intro-cs:p214:c0",
+        "page": 214,
+        "rank": 10,
+        "score": -7.24719,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 8
+        },
+        "base_rank": 12
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p264:c0",
+      "B:openstax-intro-cs:p264:c1",
+      "B:openstax-intro-cs:p263:c3"
+    ],
+    "context_chars": 2826,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 519.2,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 264,
+        "evidence": "The first example of a layered approach was Dijkstra’s THE system, which was designed in 1968."
+      }
+    ]
+  },
+  {
+    "query_id": "d10",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "What is the name for moving the CPU from running one process to running another?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p273:c5",
+        "page": 273,
+        "rank": 1,
+        "score": 6.79731,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p272:c3",
+        "page": 272,
+        "rank": 2,
+        "score": 5.77535,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 3
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p274:c0",
+        "page": 274,
+        "rank": 3,
+        "score": 3.17001,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 6,
+          "bm25": 4
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p273:c1",
+        "page": 273,
+        "rank": 4,
+        "score": 1.09219,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 8
+        },
+        "base_rank": 17
+      },
+      {
+        "id": "B:openstax-intro-cs:p271:c2",
+        "page": 271,
+        "rank": 5,
+        "score": -0.10062,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4
+        },
+        "base_rank": 11
+      },
+      {
+        "id": "B:openstax-intro-cs:p278:c1",
+        "page": 278,
+        "rank": 6,
+        "score": -0.5151,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5
+        },
+        "base_rank": 12
+      },
+      {
+        "id": "B:openstax-intro-cs:p257:c4",
+        "page": 257,
+        "rank": 7,
+        "score": -0.80208,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 6
+        },
+        "base_rank": 13
+      },
+      {
+        "id": "B:openstax-intro-cs:p269:c1",
+        "page": 269,
+        "rank": 8,
+        "score": -0.99951,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 10,
+          "bm25": 5
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p268:c1",
+        "page": 268,
+        "rank": 9,
+        "score": -1.33487,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 7
+        },
+        "base_rank": 14
+      },
+      {
+        "id": "B:openstax-intro-cs:p277:c4",
+        "page": 277,
+        "rank": 10,
+        "score": -1.56797,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 13,
+          "bm25": 15
+        },
+        "base_rank": 7
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p273:c5",
+      "B:openstax-intro-cs:p272:c3",
+      "B:openstax-intro-cs:p274:c0"
+    ],
+    "context_chars": 2290,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 499.1,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 273,
+        "evidence": "The act of switching the CPU from one process to another is called a context switch."
+      }
+    ]
+  },
+  {
+    "query_id": "d11",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "What problem occurs when memory blocks are too small to be given to processes and stay unused?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p279:c1",
+        "page": 279,
+        "rank": 1,
+        "score": 8.17011,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p283:c2",
+        "page": 283,
+        "rank": 2,
+        "score": -1.50263,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 13,
+          "bm25": 2
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p283:c3",
+        "page": 283,
+        "rank": 3,
+        "score": -3.39803,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 12,
+          "bm25": 4
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p291:c2",
+        "page": 291,
+        "rank": 4,
+        "score": -3.79574,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2
+        },
+        "base_rank": 6
+      },
+      {
+        "id": "B:openstax-intro-cs:p273:c1",
+        "page": 273,
+        "rank": 5,
+        "score": -4.17238,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 9
+        },
+        "base_rank": 19
+      },
+      {
+        "id": "B:openstax-intro-cs:p282:c1",
+        "page": 282,
+        "rank": 6,
+        "score": -4.44186,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 8
+        },
+        "base_rank": 16
+      },
+      {
+        "id": "B:openstax-intro-cs:p259:c3",
+        "page": 259,
+        "rank": 7,
+        "score": -5.49835,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4
+        },
+        "base_rank": 9
+      },
+      {
+        "id": "B:openstax-intro-cs:p277:c3",
+        "page": 277,
+        "rank": 8,
+        "score": -6.44234,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 17,
+          "bm25": 18
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p277:c1",
+        "page": 277,
+        "rank": 9,
+        "score": -6.83304,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 3
+        },
+        "base_rank": 8
+      },
+      {
+        "id": "B:openstax-intro-cs:p273:c4",
+        "page": 273,
+        "rank": 10,
+        "score": -6.83386,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3
+        },
+        "base_rank": 7
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p279:c1",
+      "B:openstax-intro-cs:p283:c2",
+      "B:openstax-intro-cs:p283:c3"
+    ],
+    "context_chars": 2577,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 480.1,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 279,
+        "evidence": "When the memory blocks cannot be allocated to the processes due to their small size and the blocks remain unused, this problem is called fragmentation."
+      }
+    ]
+  },
+  {
+    "query_id": "d12",
+    "split": "dev",
+    "type": "condition",
+    "question": "What happens when the CPU requests a page that is not in main memory?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p283:c0",
+        "page": 283,
+        "rank": 1,
+        "score": 8.81116,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p282:c1",
+        "page": 282,
+        "rank": 2,
+        "score": 3.82579,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 2
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p208:c0",
+        "page": 208,
+        "rank": 3,
+        "score": 0.73386,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5,
+          "bm25": 4
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p283:c2",
+        "page": 283,
+        "rank": 4,
+        "score": 0.20573,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 5
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p273:c1",
+        "page": 273,
+        "rank": 5,
+        "score": -0.82155,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 10,
+          "bm25": 3
+        },
+        "base_rank": 6
+      },
+      {
+        "id": "B:openstax-intro-cs:p223:c2",
+        "page": 223,
+        "rank": 6,
+        "score": -1.99764,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 8
+        },
+        "base_rank": 14
+      },
+      {
+        "id": "B:openstax-intro-cs:p281:c4",
+        "page": 281,
+        "rank": 7,
+        "score": -2.39453,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 12,
+          "bm25": 6
+        },
+        "base_rank": 7
+      },
+      {
+        "id": "B:openstax-intro-cs:p283:c1",
+        "page": 283,
+        "rank": 8,
+        "score": -2.44952,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 9
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p255:c3",
+        "page": 255,
+        "rank": 9,
+        "score": -3.52129,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 9,
+          "bm25": 10
+        },
+        "base_rank": 8
+      },
+      {
+        "id": "B:openstax-intro-cs:p281:c2",
+        "page": 281,
+        "rank": 10,
+        "score": -3.81758,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 8
+        },
+        "base_rank": 15
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p283:c0",
+      "B:openstax-intro-cs:p282:c1",
+      "B:openstax-intro-cs:p208:c0"
+    ],
+    "context_chars": 2670,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 512.1,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 283,
+        "evidence": "When the CPU demands a page and this page is not present in the main memory, we call this situation a page fault."
+      }
+    ]
+  },
+  {
+    "query_id": "d13",
+    "split": "dev",
+    "type": "direct",
+    "question": "Which encoding was approved in 1963 and later revised several times, and in which years was it revised?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p218:c2",
+        "page": 218,
+        "rank": 1,
+        "score": 2.67984,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p218:c3",
+        "page": 218,
+        "rank": 2,
+        "score": -7.78189,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 13
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p220:c4",
+        "page": 220,
+        "rank": 3,
+        "score": -8.93568,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 7
+        },
+        "base_rank": 12
+      },
+      {
+        "id": "B:openstax-intro-cs:p220:c3",
+        "page": 220,
+        "rank": 4,
+        "score": -10.05129,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 15,
+          "bm25": 9
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p221:c4",
+        "page": 221,
+        "rank": 5,
+        "score": -10.19387,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 10
+        },
+        "base_rank": 16
+      },
+      {
+        "id": "B:openstax-intro-cs:p292:c4",
+        "page": 292,
+        "rank": 6,
+        "score": -10.24378,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 8
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p271:c2",
+        "page": 271,
+        "rank": 7,
+        "score": -10.4776,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5,
+          "bm25": 3
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p293:c2",
+        "page": 293,
+        "rank": 8,
+        "score": -10.60721,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 11
+        },
+        "base_rank": 19
+      },
+      {
+        "id": "B:openstax-intro-cs:p222:c0",
+        "page": 222,
+        "rank": 9,
+        "score": -10.72417,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 9
+        },
+        "base_rank": 15
+      },
+      {
+        "id": "B:openstax-intro-cs:p224:c2",
+        "page": 224,
+        "rank": 10,
+        "score": -10.77353,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2
+        },
+        "base_rank": 6
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p218:c2",
+      "B:openstax-intro-cs:p218:c3",
+      "B:openstax-intro-cs:p220:c4"
+    ],
+    "context_chars": 2336,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 537.3,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 218,
+        "evidence": "This code was approved in 1963, before personal computers existed, and then revised in 1965, 1967, 1968, 1977, and 1986."
+      }
+    ]
+  },
+  {
+    "query_id": "d14",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "What technique does the operating system use to keep programs from overwriting each other's data, and what is it called?",
+    "filter": {
+      "chapter": 5
+    },
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p214:c1",
+        "page": 214,
+        "rank": 1,
+        "score": 4.10977,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p214:c0",
+        "page": 214,
+        "rank": 2,
+        "score": -1.97165,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 3
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p205:c1",
+        "page": 205,
+        "rank": 3,
+        "score": -2.9064,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 8,
+          "bm25": 2
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p205:c5",
+        "page": 205,
+        "rank": 4,
+        "score": -3.38594,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 13
+        },
+        "base_rank": 7
+      },
+      {
+        "id": "B:openstax-intro-cs:p237:c1",
+        "page": 237,
+        "rank": 5,
+        "score": -3.86261,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 6,
+          "bm25": 7
+        },
+        "base_rank": 6
+      },
+      {
+        "id": "B:openstax-intro-cs:p221:c2",
+        "page": 221,
+        "rank": 6,
+        "score": -3.86351,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 12
+        },
+        "base_rank": 18
+      },
+      {
+        "id": "B:openstax-intro-cs:p233:c1",
+        "page": 233,
+        "rank": 7,
+        "score": -4.22491,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 9
+        },
+        "base_rank": 13
+      },
+      {
+        "id": "B:openstax-intro-cs:p205:c4",
+        "page": 205,
+        "rank": 8,
+        "score": -4.39601,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5,
+          "bm25": 8
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p212:c2",
+        "page": 212,
+        "rank": 9,
+        "score": -5.12895,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 13
+        },
+        "base_rank": 19
+      },
+      {
+        "id": "B:openstax-intro-cs:p225:c1",
+        "page": 225,
+        "rank": 10,
+        "score": -5.19537,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 10
+        },
+        "base_rank": 15
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p214:c1",
+      "B:openstax-intro-cs:p214:c0",
+      "B:openstax-intro-cs:p205:c1"
+    ],
+    "context_chars": 2828,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 544.9,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 214,
+        "evidence": "The technique that the OS uses to isolate different programs from each other so that they do not overwrite each other’s data or corrupt each other’s files is called virtual memory."
+      }
+    ]
+  },
+  {
+    "query_id": "d15",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "What does scheduling mean?",
+    "filter": {
+      "chapter": 6
+    },
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p274:c0",
+        "page": 274,
+        "rank": 1,
+        "score": 5.55825,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 2
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p272:c3",
+        "page": 272,
+        "rank": 2,
+        "score": 5.04895,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 5
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p274:c3",
+        "page": 274,
+        "rank": 3,
+        "score": 2.93704,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 3
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p274:c1",
+        "page": 274,
+        "rank": 4,
+        "score": 2.44264,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 1
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p272:c2",
+        "page": 272,
+        "rank": 5,
+        "score": -0.203,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 8,
+          "bm25": 7
+        },
+        "base_rank": 7
+      },
+      {
+        "id": "B:openstax-intro-cs:p272:c1",
+        "page": 272,
+        "rank": 6,
+        "score": -0.45276,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7,
+          "bm25": 6
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p273:c3",
+        "page": 273,
+        "rank": 7,
+        "score": -0.58083,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 11,
+          "bm25": 4
+        },
+        "base_rank": 6
+      },
+      {
+        "id": "B:openstax-intro-cs:p277:c0",
+        "page": 277,
+        "rank": 8,
+        "score": -0.62473,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 10,
+          "bm25": 11
+        },
+        "base_rank": 9
+      },
+      {
+        "id": "B:openstax-intro-cs:p273:c1",
+        "page": 273,
+        "rank": 9,
+        "score": -1.39757,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 6
+        },
+        "base_rank": 13
+      },
+      {
+        "id": "B:openstax-intro-cs:p274:c2",
+        "page": 274,
+        "rank": 10,
+        "score": -1.76677,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5,
+          "bm25": 13
+        },
+        "base_rank": 8
+      }
+    ],
+    "first_hit_rank": 2,
+    "hit1": false,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p274:c0",
+      "B:openstax-intro-cs:p272:c3",
+      "B:openstax-intro-cs:p274:c3"
+    ],
+    "context_chars": 2060,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 539.8,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 272,
+        "evidence": "Choosing which process to run next is called scheduling."
+      },
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 272,
+        "evidence": "The activity of handling the removal of the running process from the CPU and the selection of another process based on a particular strategy is called scheduling."
+      }
+    ]
+  },
+  {
+    "query_id": "d16",
+    "split": "dev",
+    "type": "direct",
+    "question": "According to Moore's law, how often would the number of devices inside the processor double?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p236:c4",
+        "page": 236,
+        "rank": 1,
+        "score": 8.64716,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p227:c2",
+        "page": 227,
+        "rank": 2,
+        "score": -1.92812,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 2
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p237:c0",
+        "page": 237,
+        "rank": 3,
+        "score": -2.78709,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 3
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p236:c3",
+        "page": 236,
+        "rank": 4,
+        "score": -5.85625,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 9,
+          "bm25": 4
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p227:c3",
+        "page": 227,
+        "rank": 5,
+        "score": -6.03883,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 11
+        },
+        "base_rank": 16
+      },
+      {
+        "id": "B:openstax-intro-cs:p222:c0",
+        "page": 222,
+        "rank": 6,
+        "score": -7.35077,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 5
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p236:c1",
+        "page": 236,
+        "rank": 7,
+        "score": -9.57366,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 10
+        },
+        "base_rank": 15
+      },
+      {
+        "id": "B:openstax-intro-cs:p213:c1",
+        "page": 213,
+        "rank": 8,
+        "score": -9.71329,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 8
+        },
+        "base_rank": 12
+      },
+      {
+        "id": "B:openstax-intro-cs:p270:c3",
+        "page": 270,
+        "rank": 9,
+        "score": -9.86397,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5
+        },
+        "base_rank": 7
+      },
+      {
+        "id": "B:openstax-intro-cs:p238:c3",
+        "page": 238,
+        "rank": 10,
+        "score": -10.07358,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 12
+        },
+        "base_rank": 17
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p236:c4",
+      "B:openstax-intro-cs:p227:c2",
+      "B:openstax-intro-cs:p237:c0"
+    ],
+    "context_chars": 2571,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 635.4,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 236,
+        "evidence": "predicted that the number of devices inside the processor would double every 18 months, called Moore’s law"
+      }
+    ]
+  },
+  {
+    "query_id": "d17",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "What is Intel's name for simultaneous multithreading?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p238:c1",
+        "page": 238,
+        "rank": 1,
+        "score": 4.0603,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p272:c0",
+        "page": 272,
+        "rank": 2,
+        "score": -0.43879,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 9
+        },
+        "base_rank": 18
+      },
+      {
+        "id": "B:openstax-intro-cs:p254:c2",
+        "page": 254,
+        "rank": 3,
+        "score": -2.3958,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 12
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p270:c3",
+        "page": 270,
+        "rank": 4,
+        "score": -2.43773,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3
+        },
+        "base_rank": 8
+      },
+      {
+        "id": "B:openstax-intro-cs:p270:c4",
+        "page": 270,
+        "rank": 5,
+        "score": -3.36714,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 8
+        },
+        "base_rank": 16
+      },
+      {
+        "id": "B:openstax-intro-cs:p271:c2",
+        "page": 271,
+        "rank": 6,
+        "score": -4.2225,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7
+        },
+        "base_rank": 15
+      },
+      {
+        "id": "B:openstax-intro-cs:p275:c1",
+        "page": 275,
+        "rank": 7,
+        "score": -6.28816,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5,
+          "bm25": 8
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p236:c4",
+        "page": 236,
+        "rank": 8,
+        "score": -6.9428,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 5
+        },
+        "base_rank": 11
+      },
+      {
+        "id": "B:openstax-intro-cs:p221:c4",
+        "page": 221,
+        "rank": 9,
+        "score": -7.22979,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 14,
+          "bm25": 3
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p277:c3",
+        "page": 277,
+        "rank": 10,
+        "score": -8.34745,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4
+        },
+        "base_rank": 9
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p238:c1",
+      "B:openstax-intro-cs:p272:c0",
+      "B:openstax-intro-cs:p254:c2"
+    ],
+    "context_chars": 2652,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 540.6,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 238,
+        "evidence": "This is called simultaneous multithreading (SMT), which Intel calls hyperthreading technology."
+      }
+    ]
+  },
+  {
+    "query_id": "d18",
+    "split": "dev",
+    "type": "direct",
+    "question": "What does a journaling file system do?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p292:c1",
+        "page": 292,
+        "rank": 1,
+        "score": 5.02027,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p284:c2",
+        "page": 284,
+        "rank": 2,
+        "score": 0.82502,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 6
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p285:c5",
+        "page": 285,
+        "rank": 3,
+        "score": -0.72178,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 9
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p287:c1",
+        "page": 287,
+        "rank": 4,
+        "score": -1.13758,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 20,
+          "bm25": 5
+        },
+        "base_rank": 9
+      },
+      {
+        "id": "B:openstax-intro-cs:p286:c0",
+        "page": 286,
+        "rank": 5,
+        "score": -2.74755,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7,
+          "bm25": 2
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p285:c1",
+        "page": 285,
+        "rank": 6,
+        "score": -3.2595,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2
+        },
+        "base_rank": 14
+      },
+      {
+        "id": "B:openstax-intro-cs:p288:c2",
+        "page": 288,
+        "rank": 7,
+        "score": -3.65154,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 12,
+          "bm25": 16
+        },
+        "base_rank": 11
+      },
+      {
+        "id": "B:openstax-intro-cs:p287:c0",
+        "page": 287,
+        "rank": 8,
+        "score": -3.9183,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 6,
+          "bm25": 4
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p287:c2",
+        "page": 287,
+        "rank": 9,
+        "score": -4.32614,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 16,
+          "bm25": 10
+        },
+        "base_rank": 10
+      },
+      {
+        "id": "B:openstax-intro-cs:p285:c3",
+        "page": 285,
+        "rank": 10,
+        "score": -4.44934,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 8,
+          "bm25": 12
+        },
+        "base_rank": 7
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p292:c1",
+      "B:openstax-intro-cs:p284:c2",
+      "B:openstax-intro-cs:p285:c5"
+    ],
+    "context_chars": 2662,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 511.5,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 292,
+        "evidence": "This term is known as journaling file system and refers to the practice of recording the changes in the information in a separate log file sometimes called a journal file."
+      }
+    ]
+  },
+  {
+    "query_id": "d19",
+    "split": "dev",
+    "type": "condition",
+    "question": "How does the storage access latency of disks compare with that of flash memory?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p293:c2",
+        "page": 293,
+        "rank": 1,
+        "score": 5.48154,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p288:c3",
+        "page": 288,
+        "rank": 2,
+        "score": 1.5277,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 2
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p293:c1",
+        "page": 293,
+        "rank": 3,
+        "score": -0.29782,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 15
+        },
+        "base_rank": 19
+      },
+      {
+        "id": "B:openstax-intro-cs:p234:c2",
+        "page": 234,
+        "rank": 4,
+        "score": -0.5297,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5,
+          "bm25": 6
+        },
+        "base_rank": 6
+      },
+      {
+        "id": "B:openstax-intro-cs:p234:c0",
+        "page": 234,
+        "rank": 5,
+        "score": -0.59599,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 6,
+          "bm25": 3
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p234:c1",
+        "page": 234,
+        "rank": 6,
+        "score": -2.05089,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 12
+        },
+        "base_rank": 7
+      },
+      {
+        "id": "B:openstax-intro-cs:p261:c1",
+        "page": 261,
+        "rank": 7,
+        "score": -3.15889,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7,
+          "bm25": 4
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p285:c1",
+        "page": 285,
+        "rank": 8,
+        "score": -4.4473,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 5
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p233:c1",
+        "page": 233,
+        "rank": 9,
+        "score": -4.74374,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 10,
+          "bm25": 9
+        },
+        "base_rank": 9
+      },
+      {
+        "id": "B:openstax-intro-cs:p251:c0",
+        "page": 251,
+        "rank": 10,
+        "score": -5.14844,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 11
+        },
+        "base_rank": 15
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p293:c2",
+      "B:openstax-intro-cs:p288:c3",
+      "B:openstax-intro-cs:p293:c1"
+    ],
+    "context_chars": 2574,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 503.5,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 293,
+        "evidence": "storage access latency for disks is around 10 ms, and it is around 100 µs for flash memory"
+      }
+    ]
+  },
+  {
+    "query_id": "d20",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "Why are SSDs faster and more durable than hard disk drives?",
+    "filter": {
+      "chapter": 6
+    },
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p288:c3",
+        "page": 288,
+        "rank": 1,
+        "score": 7.9627,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p288:c4",
+        "page": 288,
+        "rank": 2,
+        "score": 3.7924,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 8
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p259:c2",
+        "page": 259,
+        "rank": 3,
+        "score": -1.18842,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 16,
+          "bm25": 3
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p261:c1",
+        "page": 261,
+        "rank": 4,
+        "score": -1.98301,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 9,
+          "bm25": 2
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p289:c0",
+        "page": 289,
+        "rank": 5,
+        "score": -2.53462,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3
+        },
+        "base_rank": 9
+      },
+      {
+        "id": "B:openstax-intro-cs:p285:c1",
+        "page": 285,
+        "rank": 6,
+        "score": -3.39042,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 4
+        },
+        "base_rank": 10
+      },
+      {
+        "id": "B:openstax-intro-cs:p288:c0",
+        "page": 288,
+        "rank": 7,
+        "score": -3.94444,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 9
+        },
+        "base_rank": 17
+      },
+      {
+        "id": "B:openstax-intro-cs:p293:c2",
+        "page": 293,
+        "rank": 8,
+        "score": -4.81456,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 12,
+          "bm25": 10
+        },
+        "base_rank": 6
+      },
+      {
+        "id": "B:openstax-intro-cs:p285:c0",
+        "page": 285,
+        "rank": 9,
+        "score": -7.12364,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7
+        },
+        "base_rank": 15
+      },
+      {
+        "id": "B:openstax-intro-cs:p283:c1",
+        "page": 283,
+        "rank": 10,
+        "score": -8.51477,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 12
+        },
+        "base_rank": 19
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p288:c3",
+      "B:openstax-intro-cs:p288:c4",
+      "B:openstax-intro-cs:p259:c2"
+    ],
+    "context_chars": 2045,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 499.0,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 288,
+        "evidence": "No moving parts: Unlike HDDs that use rotating disks and read/write heads, SSDs have no mechanical parts. This not only increases durability, but also means that data can be read from and written to the drive much faster."
+      }
+    ]
+  },
+  {
+    "query_id": "d21",
+    "split": "dev",
+    "type": "metadata_filter",
+    "question": "What is a thread?",
+    "filter": {
+      "chapter": 6
+    },
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p271:c1",
+        "page": 271,
+        "rank": 1,
+        "score": 8.86327,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p272:c1",
+        "page": 272,
+        "rank": 2,
+        "score": 4.50065,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 4
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p258:c0",
+        "page": 258,
+        "rank": 3,
+        "score": 2.35504,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7,
+          "bm25": 6
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p272:c2",
+        "page": 272,
+        "rank": 4,
+        "score": 1.57182,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 6,
+          "bm25": 3
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p272:c0",
+        "page": 272,
+        "rank": 5,
+        "score": 1.09783,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 11,
+          "bm25": 8
+        },
+        "base_rank": 9
+      },
+      {
+        "id": "B:openstax-intro-cs:p271:c0",
+        "page": 271,
+        "rank": 6,
+        "score": 1.02769,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 9,
+          "bm25": 12
+        },
+        "base_rank": 11
+      },
+      {
+        "id": "B:openstax-intro-cs:p254:c2",
+        "page": 254,
+        "rank": 7,
+        "score": 0.98596,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 13
+        },
+        "base_rank": 8
+      },
+      {
+        "id": "B:openstax-intro-cs:p276:c0",
+        "page": 276,
+        "rank": 8,
+        "score": 0.92448,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 2
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p276:c4",
+        "page": 276,
+        "rank": 9,
+        "score": -0.01231,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 8
+        },
+        "base_rank": 14
+      },
+      {
+        "id": "B:openstax-intro-cs:p258:c1",
+        "page": 258,
+        "rank": 10,
+        "score": -1.33984,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5,
+          "bm25": 9
+        },
+        "base_rank": 6
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p271:c1",
+      "B:openstax-intro-cs:p272:c1",
+      "B:openstax-intro-cs:p258:c0"
+    ],
+    "context_chars": 3016,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 488.6,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 254,
+        "evidence": "a thread is a path of execution within a process, and a process may contain multiple threads"
+      },
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 271,
+        "evidence": "Each thread is a basic unit of execution that executes a set of instructions in a specific order."
+      }
+    ]
+  },
+  {
+    "query_id": "d22",
+    "split": "dev",
+    "type": "paraphrase_hard",
+    "question": "What do we call the group of wires that links the CPU, the memory and the graphics card so they can exchange data?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p207:c0",
+        "page": 207,
+        "rank": 1,
+        "score": 1.11773,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p223:c2",
+        "page": 223,
+        "rank": 2,
+        "score": -0.96737,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 18,
+          "bm25": 7
+        },
+        "base_rank": 6
+      },
+      {
+        "id": "B:openstax-intro-cs:p277:c3",
+        "page": 277,
+        "rank": 3,
+        "score": -2.8243,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3
+        },
+        "base_rank": 8
+      },
+      {
+        "id": "B:openstax-intro-cs:p229:c1",
+        "page": 229,
+        "rank": 4,
+        "score": -3.09298,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 15,
+          "bm25": 3
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p206:c2",
+        "page": 206,
+        "rank": 5,
+        "score": -3.86674,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 4
+        },
+        "base_rank": 9
+      },
+      {
+        "id": "B:openstax-intro-cs:p208:c0",
+        "page": 208,
+        "rank": 6,
+        "score": -3.95336,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 9
+        },
+        "base_rank": 16
+      },
+      {
+        "id": "B:openstax-intro-cs:p259:c1",
+        "page": 259,
+        "rank": 7,
+        "score": -4.37379,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7
+        },
+        "base_rank": 14
+      },
+      {
+        "id": "B:openstax-intro-cs:p270:c1",
+        "page": 270,
+        "rank": 8,
+        "score": -5.05769,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 11
+        },
+        "base_rank": 20
+      },
+      {
+        "id": "B:openstax-intro-cs:p223:c3",
+        "page": 223,
+        "rank": 9,
+        "score": -5.55668,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 8,
+          "bm25": 14
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p206:c1",
+        "page": 206,
+        "rank": 10,
+        "score": -6.05987,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 5
+        },
+        "base_rank": 2
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p207:c0",
+      "B:openstax-intro-cs:p223:c2",
+      "B:openstax-intro-cs:p277:c3"
+    ],
+    "context_chars": 2655,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 542.8,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 207,
+        "evidence": "connected via a collection of wires referred to as a bus"
+      }
+    ]
+  },
+  {
+    "query_id": "d23",
+    "split": "dev",
+    "type": "condition",
+    "question": "In one's complement representation, how can you tell that a binary number is negative?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p216:c4",
+        "page": 216,
+        "rank": 1,
+        "score": 6.96245,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p217:c1",
+        "page": 217,
+        "rank": 2,
+        "score": 5.34213,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 4
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p216:c2",
+        "page": 216,
+        "rank": 3,
+        "score": 3.65303,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5,
+          "bm25": 5
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p216:c0",
+        "page": 216,
+        "rank": 4,
+        "score": 2.30013,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 12,
+          "bm25": 6
+        },
+        "base_rank": 9
+      },
+      {
+        "id": "B:openstax-intro-cs:p217:c2",
+        "page": 217,
+        "rank": 5,
+        "score": 2.29251,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 6,
+          "bm25": 7
+        },
+        "base_rank": 7
+      },
+      {
+        "id": "B:openstax-intro-cs:p216:c3",
+        "page": 216,
+        "rank": 6,
+        "score": 2.23303,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7,
+          "bm25": 2
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p219:c0",
+        "page": 219,
+        "rank": 7,
+        "score": 2.06222,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 10,
+          "bm25": 12
+        },
+        "base_rank": 10
+      },
+      {
+        "id": "B:openstax-intro-cs:p217:c0",
+        "page": 217,
+        "rank": 8,
+        "score": 1.74089,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 3
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p220:c1",
+        "page": 220,
+        "rank": 9,
+        "score": 1.16357,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 10
+        },
+        "base_rank": 6
+      },
+      {
+        "id": "B:openstax-intro-cs:p216:c1",
+        "page": 216,
+        "rank": 10,
+        "score": 0.42339,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 8,
+          "bm25": 8
+        },
+        "base_rank": 8
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p216:c4",
+      "B:openstax-intro-cs:p217:c1",
+      "B:openstax-intro-cs:p216:c2"
+    ],
+    "context_chars": 3094,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 606.5,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 216,
+        "evidence": "Check the most significant bit and if it is 1, the number is negative"
+      }
+    ]
+  },
+  {
+    "query_id": "d24",
+    "split": "dev",
+    "type": "paraphrase_hard",
+    "question": "In operating system design, which concept decides what should be done and which concept carries out how it is done?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p253:c0",
+        "page": 253,
+        "rank": 1,
+        "score": -1.1688,
+        "hit": true,
+        "component_ranks": {
+          "bm25": 7
+        },
+        "base_rank": 14
+      },
+      {
+        "id": "B:openstax-intro-cs:p256:c3",
+        "page": 256,
+        "rank": 2,
+        "score": -1.91706,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p272:c3",
+        "page": 272,
+        "rank": 3,
+        "score": -4.32538,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5
+        },
+        "base_rank": 9
+      },
+      {
+        "id": "B:openstax-intro-cs:p263:c0",
+        "page": 263,
+        "rank": 4,
+        "score": -4.3827,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p213:c0",
+        "page": 213,
+        "rank": 5,
+        "score": -5.63561,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7
+        },
+        "base_rank": 13
+      },
+      {
+        "id": "B:openstax-intro-cs:p272:c1",
+        "page": 272,
+        "rank": 6,
+        "score": -5.76886,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 8
+        },
+        "base_rank": 16
+      },
+      {
+        "id": "B:openstax-intro-cs:p254:c1",
+        "page": 254,
+        "rank": 7,
+        "score": -5.84822,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 9
+        },
+        "base_rank": 18
+      },
+      {
+        "id": "B:openstax-intro-cs:p257:c1",
+        "page": 257,
+        "rank": 8,
+        "score": -6.48752,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 6
+        },
+        "base_rank": 12
+      },
+      {
+        "id": "B:openstax-intro-cs:p266:c1",
+        "page": 266,
+        "rank": 9,
+        "score": -6.6648,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 8
+        },
+        "base_rank": 15
+      },
+      {
+        "id": "B:openstax-intro-cs:p222:c1",
+        "page": 222,
+        "rank": 10,
+        "score": -6.92143,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 2
+        },
+        "base_rank": 3
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p253:c0",
+      "B:openstax-intro-cs:p256:c3",
+      "B:openstax-intro-cs:p272:c3"
+    ],
+    "context_chars": 2602,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 571.2,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 253,
+        "evidence": "a policy is a way to choose which activities to perform (i.e., what needs to be done) and a mechanism is an activity that enforces policies (i.e., how to do it)"
+      }
+    ]
+  },
+  {
+    "query_id": "d25",
+    "split": "dev",
+    "type": "paraphrase_hard",
+    "question": "Which piece of software lets one physical server host several guest operating systems by creating and managing virtual machines?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p253:c2",
+        "page": 253,
+        "rank": 1,
+        "score": 3.56567,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p294:c0",
+        "page": 294,
+        "rank": 2,
+        "score": 2.37901,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7,
+          "bm25": 2
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p279:c0",
+        "page": 279,
+        "rank": 3,
+        "score": 0.30514,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4,
+          "bm25": 4
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p278:c3",
+        "page": 278,
+        "rank": 4,
+        "score": -0.35933,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 8
+        },
+        "base_rank": 6
+      },
+      {
+        "id": "B:openstax-intro-cs:p293:c4",
+        "page": 293,
+        "rank": 5,
+        "score": -0.37468,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5,
+          "bm25": 3
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p253:c3",
+        "page": 253,
+        "rank": 6,
+        "score": -0.66178,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 6,
+          "bm25": 6
+        },
+        "base_rank": 7
+      },
+      {
+        "id": "B:openstax-intro-cs:p293:c5",
+        "page": 293,
+        "rank": 7,
+        "score": -0.78077,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 5
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p267:c1",
+        "page": 267,
+        "rank": 8,
+        "score": -3.14749,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 14,
+          "bm25": 18
+        },
+        "base_rank": 13
+      },
+      {
+        "id": "B:openstax-intro-cs:p254:c2",
+        "page": 254,
+        "rank": 9,
+        "score": -4.92967,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 10
+        },
+        "base_rank": 17
+      },
+      {
+        "id": "B:openstax-intro-cs:p214:c2",
+        "page": 214,
+        "rank": 10,
+        "score": -4.97809,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 16,
+          "bm25": 15
+        },
+        "base_rank": 12
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p253:c2",
+      "B:openstax-intro-cs:p294:c0",
+      "B:openstax-intro-cs:p279:c0"
+    ],
+    "context_chars": 2418,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 516.7,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 253,
+        "evidence": "The hypervisor creates and manages virtual machines."
+      }
+    ]
+  },
+  {
+    "query_id": "d26",
+    "split": "dev",
+    "type": "paraphrase_hard",
+    "question": "On a UNIX-like system, where is the mapping from a file's name to its inode kept?",
+    "filter": null,
+    "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+    "top_k": 3,
+    "results": [
+      {
+        "id": "B:openstax-intro-cs:p285:c3",
+        "page": 285,
+        "rank": 1,
+        "score": 6.95695,
+        "hit": true,
+        "component_ranks": {
+          "dense[B]": 1,
+          "bm25": 1
+        },
+        "base_rank": 1
+      },
+      {
+        "id": "B:openstax-intro-cs:p286:c3",
+        "page": 286,
+        "rank": 2,
+        "score": 3.16202,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 2,
+          "bm25": 2
+        },
+        "base_rank": 2
+      },
+      {
+        "id": "B:openstax-intro-cs:p284:c3",
+        "page": 284,
+        "rank": 3,
+        "score": -0.17268,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 3,
+          "bm25": 3
+        },
+        "base_rank": 3
+      },
+      {
+        "id": "B:openstax-intro-cs:p285:c4",
+        "page": 285,
+        "rank": 4,
+        "score": -1.45144,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 7
+        },
+        "base_rank": 11
+      },
+      {
+        "id": "B:openstax-intro-cs:p285:c2",
+        "page": 285,
+        "rank": 5,
+        "score": -1.62638,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 5,
+          "bm25": 4
+        },
+        "base_rank": 4
+      },
+      {
+        "id": "B:openstax-intro-cs:p287:c0",
+        "page": 287,
+        "rank": 6,
+        "score": -2.96089,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 4
+        },
+        "base_rank": 9
+      },
+      {
+        "id": "B:openstax-intro-cs:p291:c2",
+        "page": 291,
+        "rank": 7,
+        "score": -5.26254,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 7,
+          "bm25": 6
+        },
+        "base_rank": 6
+      },
+      {
+        "id": "B:openstax-intro-cs:p291:c3",
+        "page": 291,
+        "rank": 8,
+        "score": -6.05328,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 8,
+          "bm25": 5
+        },
+        "base_rank": 5
+      },
+      {
+        "id": "B:openstax-intro-cs:p284:c1",
+        "page": 284,
+        "rank": 9,
+        "score": -6.9155,
+        "hit": false,
+        "component_ranks": {
+          "bm25": 8
+        },
+        "base_rank": 12
+      },
+      {
+        "id": "B:openstax-intro-cs:p292:c2",
+        "page": 292,
+        "rank": 10,
+        "score": -7.12469,
+        "hit": false,
+        "component_ranks": {
+          "dense[B]": 16,
+          "bm25": 10
+        },
+        "base_rank": 7
+      }
+    ],
+    "first_hit_rank": 1,
+    "hit1": true,
+    "hit3": true,
+    "context_ids": [
+      "B:openstax-intro-cs:p285:c3",
+      "B:openstax-intro-cs:p286:c3",
+      "B:openstax-intro-cs:p284:c3"
+    ],
+    "context_chars": 2731,
+    "truncated": [],
+    "skipped": [],
+    "context_hit": true,
+    "elapsed_ms": 523.7,
+    "gold": [
+      {
+        "source_id": "openstax-intro-cs",
+        "page": 285,
+        "evidence": "The name-toinode mapping is stored in directories"
+      }
+    ]
+  }
+]

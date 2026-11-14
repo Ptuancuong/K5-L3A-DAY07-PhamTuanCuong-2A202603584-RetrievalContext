@@ -1,0 +1,30 @@
+{
+  "config": "hybrid_combo",
+  "strategy": "rrf(dense[B]+bm25)",
+  "split": "dev",
+  "N": 26,
+  "top_k": 3,
+  "context": {
+    "budget": 6400,
+    "mode": "truncate"
+  },
+  "hit1": 23,
+  "hit3": 24,
+  "mrr10": 0.913,
+  "context_hit": 24,
+  "avg_context_chars": 2609.9,
+  "latency_ms": {
+    "median": 65.5,
+    "mean": 66.9,
+    "max": 101.2
+  },
+  "setup_seconds": 0.0,
+  "service_cost_usd": 0.0,
+  "missed_at_3": [
+    "d15",
+    "d24"
+  ],
+  "hit1_str": "23/26 (88.5%)",
+  "hit3_str": "24/26 (92.3%)",
+  "context_hit_str": "24/26 (92.3%)"
+}

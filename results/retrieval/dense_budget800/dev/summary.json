@@ -1,0 +1,30 @@
+{
+  "config": "dense_budget800",
+  "strategy": "dense[B]",
+  "split": "dev",
+  "N": 26,
+  "top_k": 3,
+  "context": {
+    "budget": 800,
+    "mode": "skip"
+  },
+  "hit1": 20,
+  "hit3": 24,
+  "mrr10": 0.849,
+  "context_hit": 5,
+  "avg_context_chars": 521.0,
+  "latency_ms": {
+    "median": 65.5,
+    "mean": 69.3,
+    "max": 89.3
+  },
+  "setup_seconds": 0.0,
+  "service_cost_usd": 0.0,
+  "missed_at_3": [
+    "d15",
+    "d24"
+  ],
+  "hit1_str": "20/26 (76.9%)",
+  "hit3_str": "24/26 (92.3%)",
+  "context_hit_str": "5/26 (19.2%)"
+}

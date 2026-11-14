@@ -1,0 +1,1 @@
+{"name": "dense_budget800", "description": "Context experiment: baseline with the starter default budget of 800 chars (skip blocks that do not fit).", "retrieval": {"method": "dense", "index": "B"}, "top_k": 3, "use_filter": true, "context": {"budget": 800, "mode": "skip"}, "agent": {"max_searches": 3}}

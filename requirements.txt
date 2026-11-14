@@ -1,0 +1,8 @@
+# Day 7 (Python 3.11). Same stack as the Day 6 run; the Day 6 venv can be reused as is.
+# torch CPU build: pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu
+psycopg[binary]==3.3.8
+pgvector==0.5.1
+numpy==2.4.6
+sentence-transformers==6.3.0   # e5 query embedder + CrossEncoder reranker
+transformers==5.22.2
+# LLM client uses only the standard library (urllib) -> no extra package.

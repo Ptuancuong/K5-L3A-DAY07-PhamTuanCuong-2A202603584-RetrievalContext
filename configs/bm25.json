@@ -1,0 +1,1 @@
+{"name": "bm25", "description": "Method 2: Okapi BM25 (k1=1.5, b=0.75, simple English stopwords) over the same index-B chunks.", "retrieval": {"method": "bm25", "index": "B"}, "top_k": 3, "use_filter": true, "context": {"budget": 3200, "mode": "skip"}, "agent": {"max_searches": 3}}

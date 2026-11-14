@@ -1,0 +1,1 @@
+{"name": "hybrid_combo", "description": "Hybrid RRF (dense + BM25) + improvements A and B.", "retrieval": {"method": "hybrid", "index": "B", "depth": 20, "rrf_k": 60}, "top_k": 3, "use_filter": true, "context": {"budget": 6400, "mode": "truncate"}, "agent": {"max_searches": 3, "first_search": "original_question"}}

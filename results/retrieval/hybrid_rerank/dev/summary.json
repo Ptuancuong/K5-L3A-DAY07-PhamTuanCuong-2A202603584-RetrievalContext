@@ -1,0 +1,27 @@
+{
+  "config": "hybrid_rerank",
+  "strategy": "rerank[ms-marco-MiniLM-L-6-v2](rrf(dense[B]+bm25))",
+  "split": "dev",
+  "N": 26,
+  "top_k": 3,
+  "context": {
+    "budget": 3200,
+    "mode": "skip"
+  },
+  "hit1": 25,
+  "hit3": 26,
+  "mrr10": 0.981,
+  "context_hit": 26,
+  "avg_context_chars": 2574.1,
+  "latency_ms": {
+    "median": 521.5,
+    "mean": 527.9,
+    "max": 635.4
+  },
+  "setup_seconds": 0.2,
+  "service_cost_usd": 0.0,
+  "missed_at_3": [],
+  "hit1_str": "25/26 (96.2%)",
+  "hit3_str": "26/26 (100.0%)",
+  "context_hit_str": "26/26 (100.0%)"
+}

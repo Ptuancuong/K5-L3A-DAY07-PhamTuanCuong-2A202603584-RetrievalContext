@@ -1,0 +1,265 @@
+[
+  {
+    "query_id": "d01",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d02",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d03",
+    "citation_support": [
+      true,
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d04",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d05",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d06",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d07",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d08",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d09",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d10",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d11",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d12",
+    "citation_support": [
+      true,
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d13",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d14",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d15",
+    "citation_support": [
+      true,
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct: definition taken from p274 ('determining which process in the ready state should be moved to the running state'), equivalent to the gold 'choosing which process to run next'; p274 is not in the gold list, so retrieval/context metrics count it as a miss"
+  },
+  {
+    "query_id": "d16",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d17",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d18",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d19",
+    "citation_support": [
+      true,
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d20",
+    "citation_support": [
+      true,
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d21",
+    "citation_support": [
+      true,
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d22",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d23",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d24",
+    "citation_support": [
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d25",
+    "citation_support": [
+      true,
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "d26",
+    "citation_support": [
+      true,
+      true
+    ],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "answer_grade": 2,
+    "reason": "correct and complete; cited chunk(s) contain the gold evidence"
+  },
+  {
+    "query_id": "ud01",
+    "citation_support": [],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "abstention_correct": true,
+    "reason": "searched, abstained and named what is missing; no unsupported claim"
+  },
+  {
+    "query_id": "ud02",
+    "citation_support": [],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "abstention_correct": true,
+    "reason": "searched, abstained and named what is missing; no unsupported claim"
+  },
+  {
+    "query_id": "ud03",
+    "citation_support": [],
+    "labeled_by": "claude-opus-5.5 draft (read answers + cited chunks); pending author review",
+    "abstention_correct": true,
+    "reason": "searched, abstained and named what is missing; no unsupported claim"
+  }
+]
